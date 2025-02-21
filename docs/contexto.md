@@ -55,8 +55,16 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Definir uma agenda com horários personalizados. (Criar,editar,excluir horários) | ALTA | 
+|RF-002| Marcar, alterar ou desmarcar um horário de acordo com a agenda disponível do serviço escolhido | MÉDIA |
+|RF-003| Processamento de login de usuário cadastrado | MÉDIA |
+|RF-004| Processamento de saída de usuário do sistema | MÉDIA |
+|RF-005| Processamento de Inclusão, Alteração, Consulta e Exclusão de usuário | MÉDIA |
+|RF-006| Editar dados de perfil como nome, email, senha, descrição, excluir perfil | MÉDIA |
+|RF-007| Pesquisar serviços na lista geral | MÉDIA |
+|RF-008| Processamento de Inclusão, Exclusão e consulta de serviços na lista de favoritas | MÉDIA |
+
+
 
 ### Requisitos não Funcionais
 

@@ -1,13 +1,12 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Nos últimos anos, o setor de serviços de autocuidado e beleza como barbearias, cabeleireiros, esteticistas e outros tem crescido significativamente. Este projeto se propõe a oferecer uma ferramenta de auxílio a estes empreendedores e empreendedoras, particularmente no que diz respeito à gestão de seus horários de atendimento.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+A prestação de serviços de autocuidado é vista como uma oportunidade, principalmente por pessoas de baixa renda, uma vez que se trata de um mercado em expansão, com poucas barreiras de entrada e um investimento inicial relativamente baixo. Além disso, por se tratarem de serviços invariavelmente prestados de forma presencial e que possuem um potencial altamente restrito de ganhos de economia de escala, são pouco suscetíveis à monopolização e centralização, permitindo que pequenos prestadores construam e fidelizem suas clientelas regionais.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+No entanto, esses microempreendedores se deparam com desafios substanciais, sobretudo na gestão de seus negócios. Nesse contexto, um dos desafios é o acúmulo de tarefas, dentre as quais se encontra a gestão de seus horários de disponibilidade e da marcação de horários com seus clientes.
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
 
 > **Links Úteis**:
 > - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
@@ -16,18 +15,24 @@ Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thin
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Frente ao problema descrito acima, a proposta deste projeto é desenvolver uma solução de software composta basicamente por uma aplicação backend que opere em conjunto com um frontend web e, ao mesmo tempo, com um aplicativo mobile voltado para o sistema operacional Android.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+A ferramenta, conforme será melhor detalhado adiante, deverá permitir que os prestadores e prestadoras de serviço definam suas agendas de horários e, uma vez que isto seja feito, seus clientes possam consultar horários disponíveis e realizar agendamentos de forma automatizada.
+
  
 > **Links Úteis**:
 > - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+	A tecnologia tem o potencial de simplificar a execução de tarefas que, sem ela, demandam mais tempo e esforço para serem realizadas. Via de regra, os prestadores de serviços que atuam enquanto microempreendedores individuais possuem pouco ou nenhum apoio enquanto realizam suas atividades, o que na prática significa executar sem ajuda todas as tarefas da administração do seu pequeno negócio. Uma dessas tarefas é o agendamento de clientes, que envolve manter o controle dos atendimentos para evitar conflitos de horários, sobrecargas e outros problemas que podem ser causados por falhas na organização. Além disso, é preciso combinar cada atendimento individualmente, seja por mensagens, ligações ou mesmo conversas cara a cara.
+ 
+Pode ser frustrante para os clientes quando eles tentam agendar um serviço e ficam sem resposta por longos períodos. De forma semelhante, pode ser altamente estressante para o(a) prestador(a) de serviço interromper suas atividades constantemente para conversar com clientes, gerenciando manualmente seus horários e compromissos.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+Este projeto pretende oferecer a quem trabalha no ramo da prestação de serviços a automação de uma tarefa indispensável ao seu negócio, através de uma ferramenta simples e de fácil adaptação à estratégia de atuação já desenvolvida por cada pessoa. Além disso, será possível oferecer um atendimento mais prático e com menor tempo de espera, o que poderá trazer ganhos secundários derivados da maior satisfação e fidelização da base de clientes.
+
+Essa aplicação permitirá que microempreendedores aprimorem significativamente a gestão de seus horários, reduzindo sua carga de trabalho e, ao mesmo tempo, oferecendo um serviço mais conveniente e satisfatório aos seus clientes.
+
 
 > **Links Úteis**:
 > - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)

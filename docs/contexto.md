@@ -39,10 +39,9 @@ Essa aplicação permitirá que microempreendedores aprimorem significativamente
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+O público-alvo é composto por micro e pequenos empreendedores do setor de serviços de beleza, como cabeleireiros, barbeiros, esteticistas, manicures, entre outros. Em um primeiro momento, busca-se atender às necessidades de prestadores de serviços pertencentes a camadas socioeconômicas mais vulneráveis, que frequentemente enfrentam o desafio de lidar com múltiplas tarefas simultâneas devido à natureza de seus negócios. Para esse público, uma solução mais simples e gratuita, em comparação às opções existentes no mercado, seria altamente benéfica.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+Espera-se que a maioria dos usuários seja formada por profissionais que promovem seus serviços por meio das redes sociais e do WhatsApp, demonstrando um nível básico de familiaridade com tecnologia. Além disso, o produto também atenderá os clientes desses profissionais, que se tornarão usuários da aplicação ao utilizarem a ferramenta para agendar atendimentos. A adesão por parte dos clientes é esperada principalmente daqueles que utilizam redes sociais e se sentem confortáveis com a comunicação online – um perfil cada vez mais comum e diversificado na população.
 
 > **Links Úteis**:
 > - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)

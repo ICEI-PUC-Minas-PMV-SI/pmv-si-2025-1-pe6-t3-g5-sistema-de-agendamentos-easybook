@@ -101,14 +101,18 @@ todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+O projeto está restrito pelos itens apresentados na tabela a seguir, considerando o contexto do setor de autocuidado e beleza e as limitações de um projeto acadêmico:
 
-|ID| Restrição                                             |
-|--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+| ID   | Restrição                                                                                                                  |
+|------|----------------------------------------------------------------------------------------------------------------------------|
+| 01   | O projeto deverá ser entregue até o final do semestre.                                                                     |
+| 02   | Não pode ser desenvolvido um módulo de backend completo; a solução deve se basear em abordagens simplificadas ou terceirizadas. |
+| 03   | O sistema se limitará às funcionalidades essenciais de agendamento, sem incluir recursos avançados que possam comprometer a usabilidade para microempreendedores. |
+| 04   | O desenvolvimento deverá utilizar as tecnologias e ferramentas definidas previamente, considerando os conhecimentos da equipe e a infraestrutura disponível. |
+| 05   | O orçamento está restrito aos créditos gratuitos disponibilizados pela instituição, não havendo investimento em ferramentas ou serviços pagos. |
+| 06   | O sistema deve atender às normas de segurança e privacidade de dados (como a LGPD), implementando medidas básicas viáveis dentro dos recursos e prazos disponíveis. |
+| 07   | A equipe de desenvolvimento é composta por alunos com nível básico a intermediário, o que limita a complexidade das soluções implementadas. |
+| 08   | A aplicação será projetada para suportar um número limitado de usuários simultâneos, adequado ao escopo de um projeto acadêmico. |
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)

@@ -119,7 +119,41 @@ O projeto faz parte de uma proposta didática e tem como foco a construção de 
 
 # Catálogo de Serviços
 
-Descreva aqui todos os serviços que serão disponibilizados pelo seu projeto, detalhando suas características e funcionalidades.
+O Catálogo de Serviços do EasyBook organiza e detalha os serviços oferecidos tanto para usuários finais quanto para profissionais e empresas. Seu objetivo é garantir um funcionamento eficiente da plataforma, permitindo o agendamento digital de horários para diversos tipos de negócios, como clínicas médicas, salões de beleza, academias e outros.
+
+Detalhamento dos Serviços:
+
+1. Contas
+Gerencia o acesso dos usuários à plataforma. Inclui:
+- Cadastro de novo usuário: Criação de contas para novos clientes ou profissionais.
+- Recuperar senha: Processo de redefinição de senha para usuários que esqueceram suas credenciais.
+- Alteração de dados cadastrais: Permite que usuários atualizem suas informações pessoais, como nome, telefone e e-mail.
+
+2. Agendamentos
+Núcleo da plataforma, permite aos usuários marcarem, cancelarem e gerenciarem compromissos. Inclui:
+- Marcar novo horário: Interface para os clientes escolherem um serviço e um horário disponível.
+- Cancelar agendamento: Opção para usuários cancelarem compromissos, conforme regras definidas pelo prestador.
+- Reagendar horário: Permite que usuários alterem a data e o horário de um compromisso já agendado.
+- Notificações de lembrete: Envio de alertas automáticos via e-mail ou SMS para lembrar os clientes dos agendamentos.
+
+3. Suporte Técnico
+Oferece assistência a usuários e empresas que utilizam a plataforma. Inclui:
+- Suporte para usuários finais Pessoa Física: Atendimento a clientes que enfrentam dificuldades técnicas.
+- Suporte para profissionais/empresas Pessoa Jurídica: Ajuda para negócios que utilizam a plataforma para gerenciar seus serviços.
+- Relatar erro na plataforma: Canal para reportar bugs ou falhas técnicas.
+
+| Serviço                 | Oferta de Serviço                                      | Prioridade | SLA Estimado |
+|-------------------------|--------------------------------------------------------|------------|--------------|
+| **Contas**              | Cadastro de novo usuário                              | Baixa      | Imediato     |
+|                         | Recuperar senha                                       | Alta       | Imediato - 1h|
+|                         | Alteração de dados cadastrais - Pessoa Física         | Baixa      | Imediato     |
+|                         | Alteração de dados cadastrais                         | Média      | Imediato - 1h|
+| **Agendamentos**        | Marcar novo horário                                   | Baixa      | Imediato     |
+|                         | Cancelar agendamento                                 | Média       | Imediato - 1h|
+|                         | Reagendar horário                                    | Média       | Imediato - 1h|
+| **Suporte Técnico**     | Suporte para usuários finais - PF                     | Média       | 30min - 4h  |
+|                         | Suporte para profissionais/empresas - PJ              | Alta       | Imediato - 2h|
+|                         | Relatar erro na plataforma                           | Alta       | 1h - 72h     |
 
 # Arquitetura da Solução
 

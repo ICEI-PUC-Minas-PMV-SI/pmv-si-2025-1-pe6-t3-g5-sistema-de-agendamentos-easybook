@@ -72,16 +72,13 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser compatível com Windows 10 ou superior | ALTA |
-|RNF-002| O sistema deve ser compatível com dispositivos móveis Android | ALTA |
-|RNF-003| O sistema deve funcionar corretamente nos seguintes navegadores (Google Chrome, Firefox, Microsoft Edge) |  ALTA |
+|-------|----------------------------------------|----|
+|RNF-001| A interface deve ser responsiva para se adaptar a diferentes tamanhos de tela | ALTA |
+|RNF-002| O sistema mobile deve ser compatível com Android e iOS | ALTA |
+|RNF-003| O sistema deve atender às normas de segurança e privacidade de dados (como a LGPD) | ALTA |
 |RNF-004| O sistema deve permitir autenticação por senha, garantindo armazenamento seguro das credenciais dos usuários |  ALTA |
-|RNF-005| A interface deve ser responsiva para se adaptar a diferentes tamanhos de tela |  MÉDIA |
-|RNF-006| O tempo de resposta das principais funcionalidades, como agendamentos, deve ser inferior a 5 segundos |  MÉDIA |
-|RNF-007| O banco de dados deve permitir migração para outro sistema de gerenciamento SQL caso necessário |  BAIXA |
-|RNF-008| O sistema deve ser desenvolvido de forma modular para facilitar futuras atualizações |  BAIXA |
-|RNF-009| O sistema deve atender às normas de segurança e privacidade de dados (como a LGPD), implementando medidas dentro dos recursos e prazos disponíveis. | BAIXA |
+|RNF-005| O sistema deve funcionar corretamente nos seguintes navegadores (Google Chrome, Firefox, Microsoft Edge) |  MÉDIA |
+|RNF-006| O tempo de resposta das principais funcionalidades, como agendamentos, deve ser inferior a 5 segundos |  BAIXA |
 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:

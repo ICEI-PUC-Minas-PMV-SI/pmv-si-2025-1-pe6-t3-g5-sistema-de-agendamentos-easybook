@@ -57,8 +57,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |Responsável |
-|-------|----------------------------------------|----|Responsável |
+|ID     | Descrição do Requisito  |Prioridade |
+|-------|----------------------------------------|----|
 |RNF-001| O sistema deve executar gestão de agendas (Criar,editar,excluir horários) | ALTA | Responsável |
 |RNF-002| Gerencia o acesso dos usuários à plataforma | MÉDIA | Responsável |
 |RNF-003| Processamento de login de usuário, sistema deve prover autenticação e autorização (segurança) |  ALTA | Responsável |

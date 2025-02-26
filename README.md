@@ -1,4 +1,4 @@
-# TÍTULO DO PROJETO
+# EasyBook - Plataforma de agendamentos
 
 `CURSO: Sistemas de Informação`
 

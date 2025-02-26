@@ -82,6 +82,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RNF-006| O tempo de resposta das principais funcionalidades, como agendamentos, deve ser inferior a 5 segundos |  MÉDIA |
 |RNF-007| O banco de dados deve permitir migração para outro sistema de gerenciamento SQL caso necessário |  BAIXA |
 |RNF-008| O sistema deve ser desenvolvido de forma modular para facilitar futuras atualizações |  BAIXA |
+|RNF-009| O sistema deve atender às normas de segurança e privacidade de dados (como a LGPD), implementando medidas dentro dos recursos e prazos disponíveis. | BAIXA |
 
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
@@ -106,12 +107,10 @@ O projeto faz parte de uma proposta didática e tem como foco a construção de 
 | ID   | Restrição                                                                                                                  |
 |------|----------------------------------------------------------------------------------------------------------------------------|
 | 01   | O projeto deverá ser entregue até o dia 29 de junho de 2025.                                                               |
-| 02   | O sistema se limitará às funcionalidades essenciais de agendamento, sem incluir recursos avançados que possam comprometer a usabilidade para microempreendedores. |
-| 03   | O desenvolvimento deverá utilizar as tecnologias e ferramentas definidas considerando os conhecimentos da equipe, a proposta acadêmica e a infraestrutura disponível. |
-| 04   | O orçamento está restrito aos créditos gratuitos disponibilizados pela instituição, não havendo investimento em ferramentas ou serviços pagos. |
-| 05   | O sistema deve atender às normas de segurança e privacidade de dados (como a LGPD), implementando medidas dentro dos recursos e prazos disponíveis. |
-| 06   | A equipe de desenvolvimento é composta por alunos com experiência e habilidades em níveis básico ou intermediário, o que limita a complexidade das soluções implementadas. |
-| 07   | A aplicação será projetada para suportar um número limitado de usuários simultâneos, adequado ao escopo de um projeto acadêmico. |
+| 02   | O desenvolvimento deverá utilizar as tecnologias e ferramentas definidas considerando os conhecimentos da equipe, a proposta acadêmica e a infraestrutura disponível. |
+| 03   | O orçamento está restrito aos créditos gratuitos disponibilizados pela instituição, não havendo investimento em ferramentas ou serviços pagos. |
+| 04   | A equipe de desenvolvimento é composta por alunos com experiência e habilidades em níveis básico ou intermediário, o que limita a complexidade das soluções implementadas. |
+| 05   | A aplicação será projetada para suportar um número limitado de usuários simultâneos, adequado ao escopo de um projeto acadêmico. |
 
 > **Links Úteis**:
 > - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)

@@ -58,15 +58,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Definir uma agenda com horários personalizados. (Criar,editar,excluir horários) | ALTA | 
-|RF-002| Marcar, alterar ou desmarcar um horário de acordo com a agenda disponível do serviço escolhido | MÉDIA |
-|RF-003| Processamento de login de usuário cadastrado | MÉDIA |
-|RF-004| Processamento de saída de usuário do sistema | MÉDIA |
-|RF-005| Processamento de Inclusão, Alteração, Consulta e Exclusão de usuário | MÉDIA |
-|RF-006| Editar dados de perfil como nome, email, senha, descrição, excluir perfil | MÉDIA |
-|RF-007| Pesquisar serviços na lista geral | MÉDIA |
-|RF-008| Processamento de Inclusão, Exclusão e consulta de serviços na lista de favoritas | MÉDIA |
+|-------|----------------------------------------|----|
+|RNF-001| A interface deve ser responsiva para se adaptar a diferentes tamanhos de tela | ALTA |
+|RNF-002| O sistema mobile deve ser compatível com Android e iOS | ALTA |
+|RNF-003| O sistema deve atender às normas de segurança e privacidade de dados (como a LGPD) | ALTA |
+|RNF-004| O sistema deve permitir autenticação por senha, garantindo armazenamento seguro das credenciais dos usuários |  ALTA |
+|RNF-005| O sistema deve funcionar corretamente nos seguintes navegadores (Google Chrome, Firefox, Microsoft Edge) |  MÉDIA |
+|RNF-006| O tempo de resposta das principais funcionalidades, como agendamentos, deve ser inferior a 5 segundos |  BAIXA |
+
 
 
 

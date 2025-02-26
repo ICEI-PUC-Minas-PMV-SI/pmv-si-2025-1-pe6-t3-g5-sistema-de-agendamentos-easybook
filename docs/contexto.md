@@ -75,9 +75,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|----------------------------------------|----|
 |RNF-001| A interface deve ser responsiva para se adaptar a diferentes tamanhos de tela | ALTA |
 |RNF-002| O sistema mobile deve ser compatível com Android e iOS | ALTA |
-|RNF-003| O sistema deve atender às normas de segurança e privacidade de dados (como a LGPD) | ALTA |
-|RNF-004| O sistema deve permitir autenticação por senha, garantindo armazenamento seguro das credenciais dos usuários |  ALTA |
-|RNF-005| O sistema deve funcionar corretamente nos seguintes navegadores (Google Chrome, Firefox, Microsoft Edge) |  MÉDIA |
+|RNF-003| O sistema deve permitir autenticação por senha, garantindo armazenamento seguro das credenciais dos usuários |  ALTA |
+|RNF-004| O sistema deve funcionar corretamente nos seguintes navegadores (Google Chrome, Firefox, Microsoft Edge) |  MÉDIA |
+|RNF-005| O sistema deve atender às normas de segurança e privacidade de dados (como a LGPD) | BAIXA |
 |RNF-006| O tempo de resposta das principais funcionalidades, como agendamentos, deve ser inferior a 5 segundos |  BAIXA |
 
 

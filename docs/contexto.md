@@ -162,6 +162,36 @@ Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, 
 
 Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
+
+📌 Tecnologias Utilizadas
+🛠️ Ambiente de Desenvolvimento
+✔️ Visual Studio Code (VS Code) – IDE principal para escrever e depurar código.
+
+💻 Linguagens de Programação
+✔️ JavaScript – Utilizado para o desenvolvimento frontend e interações dinâmicas.
+✔️ Python – Utilizado para o backend, criação de API e manipulação de dados.
+
+🌐 Desenvolvimento Frontend (Interface do Usuário)
+✔️ React.js – Framework JavaScript para desenvolvimento de interfaces web dinâmicas e reativas.
+✔️ jQuery – Biblioteca JavaScript para manipulação do DOM e simplificação de chamadas AJAX.
+
+📱 Desenvolvimento Mobile
+✔️ React Native – Framework baseado em React para desenvolvimento de aplicativos móveis (Android e iOS).
+
+⚙️ Backend e APIs
+✔️ Flask (Python) – Framework leve para criação de APIs RESTful.
+✔️ Requests (Python) – Biblioteca para realizar requisições HTTP e consumir APIs.
+
+🔗 Relação entre as Tecnologias
+1️⃣ O usuário acessa a aplicação via navegador (React.js) ou aplicativo mobile (React Native).
+2️⃣ O frontend envia requisições HTTP para a API desenvolvida em Flask, utilizando chamadas AJAX/jQuery ou Fetch API no React.
+3️⃣ O backend Flask processa as requisições e pode:
+
+Buscar dados em um banco de dados.
+Fazer chamadas externas via Requests.
+Processar informações e retornar uma resposta em JSON.
+4️⃣ O frontend recebe os dados da API e os exibe dinamicamente na interface.
+
 ## Hospedagem
 
 Explique como a hospedagem e o lançamento da plataforma foi feita.

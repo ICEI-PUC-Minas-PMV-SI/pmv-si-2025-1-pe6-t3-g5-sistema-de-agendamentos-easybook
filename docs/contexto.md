@@ -156,41 +156,34 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
 
 
-## Tecnologias Utilizadas
-
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
-
-
+# Tecnologias Utilizadas
  
  ## Ambiente de Desenvolvimento
- Visual Studio Code (VS Code) – IDE principal para escrever e depurar código.
+  - Visual Studio Code (VS Code) – IDE principal para escrever e depurar código.
 
  ## Linguagens de Programação
- JavaScript – Utilizado para o desenvolvimento frontend e interações dinâmicas.
- Python – Utilizado para o backend, criação de API e manipulação de dados.
+  - JavaScript – Utilizado para o desenvolvimento frontend e interações dinâmicas.
+  - Python – Utilizado para o backend, criação de API e manipulação de dados.
 
  ## Desenvolvimento Frontend (Interface do Usuário)
- React.js – Framework JavaScript para desenvolvimento de interfaces web dinâmicas e reativas.
- jQuery – Biblioteca JavaScript para manipulação do DOM e simplificação de chamadas AJAX.
+  - React.js – Framework JavaScript para desenvolvimento de interfaces web dinâmicas e reativas.
+  - jQuery – Biblioteca JavaScript para manipulação do DOM e simplificação de chamadas AJAX.
 
  ## Desenvolvimento Mobile
- React Native – Framework baseado em React para desenvolvimento de aplicativos móveis (Android e iOS).
+  - React Native – Framework baseado em React para desenvolvimento de aplicativos móveis (Android e iOS).
 
  ## Backend e APIs
- Flask (Python) – Framework leve para criação de APIs RESTful.
- Requests (Python) – Biblioteca para realizar requisições HTTP e consumir APIs.
+  - Flask (Python) – Framework leve para criação de APIs RESTful.
+  - Requests (Python) – Biblioteca para realizar requisições HTTP e consumir APIs.
 
-# Relação entre as Tecnologias
-1️- O usuário acessa a aplicação via navegador (React.js) ou aplicativo mobile (React Native).
-2️- O frontend envia requisições HTTP para a API desenvolvida em Flask, utilizando chamadas AJAX/jQuery ou Fetch API no React.
-3️- O backend Flask processa as requisições e pode:
-
-Buscar dados em um banco de dados.
-Fazer chamadas externas via Requests.
-Processar informações e retornar uma resposta em JSON.
-4️- O frontend recebe os dados da API e os exibe dinamicamente na interface.
+## Relação entre as Tecnologias
+### 1️- O usuário acessa a aplicação via navegador (React.js) ou aplicativo mobile (React Native).
+### 2️- O frontend envia requisições HTTP para a API desenvolvida em Flask, utilizando chamadas AJAX/jQuery ou Fetch API no React.
+### 3️- O backend Flask processa as requisições e pode:
+ - Buscar dados em um banco de dados.
+ - Fazer chamadas externas via Requests.
+ - Processar informações e retornar uma resposta em JSON.
+### 4️- O frontend recebe os dados da API e os exibe dinamicamente na interface.
 
 
 ![WhatsApp Image 2025-02-28 at 18 58 37](https://github.com/user-attachments/assets/cbacbd73-3051-4954-a703-0bab07c83267)

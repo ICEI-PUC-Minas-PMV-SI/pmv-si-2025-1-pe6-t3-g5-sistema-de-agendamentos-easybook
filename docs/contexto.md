@@ -192,6 +192,12 @@ Fazer chamadas externas via Requests.
 Processar informações e retornar uma resposta em JSON.
 4️- O frontend recebe os dados da API e os exibe dinamicamente na interface.
 
+
+![WhatsApp Image 2025-02-28 at 18 58 37](https://github.com/user-attachments/assets/cbacbd73-3051-4954-a703-0bab07c83267)
+Figura mostrando como as tecnologias estão relacionadas e a interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+
+
+
 # Hospedagem
 
 Esta seção apresenta o planejamento e as estratégias adotadas para a hospedagem da aplicação, considerando as limitações orçamentárias e o contexto de um projeto acadêmico. Para o ambiente de produção, serão consideradas duas alternativas de plataforma: **Heroku** e **Vercel**.

@@ -192,9 +192,68 @@ Fazer chamadas externas via Requests.
 Processar informações e retornar uma resposta em JSON.
 4️- O frontend recebe os dados da API e os exibe dinamicamente na interface.
 
-## Hospedagem
+# Hospedagem
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+Esta seção apresenta o planejamento e as estratégias adotadas para a hospedagem da aplicação, considerando as limitações orçamentárias e o contexto de um projeto acadêmico. Para o ambiente de produção, serão consideradas duas alternativas de plataforma: **Heroku** e **Vercel**.
+
+## 1. Escolha da Plataforma
+
+### Heroku
+O Heroku configura-se como uma solução apropriada para a hospedagem do backend, principalmente devido à sua compatibilidade com aplicações desenvolvidas em Flask. O plano gratuito oferecido pela plataforma é compatível com as restrições de uso previstas para projetos acadêmicos, permitindo a integração com serviços adicionais, como bancos de dados (por exemplo, Heroku Postgres) e ferramentas de monitoramento.
+
+### Vercel
+A Vercel é uma alternativa robusta para o deploy do frontend, especialmente para aplicações desenvolvidas em React.js. Esta plataforma possibilita a hospedagem de arquivos estáticos com alta disponibilidade e baixa latência. A integração com repositórios Git e a capacidade de realizar deploys contínuos tornam a Vercel ideal para manter atualizações ágeis e alinhadas às melhores práticas de desenvolvimento.
+
+## 2. Hospedagem do Backend
+
+Para a implantação do backend (desenvolvido em Flask), serão adotadas as seguintes etapas:
+
+- **Preparação do Código:**  
+  - Adequação do código para execução em ambiente de produção, utilizando o servidor de aplicação Gunicorn para gerenciamento de requisições.
+  - Criação de um arquivo `Procfile` com o comando de inicialização da aplicação, por exemplo:  
+    ```
+    web: gunicorn app:app
+    ```
+  - Definição de variáveis de ambiente para gerenciar informações sensíveis, como chaves de acesso e credenciais do banco de dados.
+
+- **Banco de Dados:**  
+  - Inicialmente, pode-se utilizar o SQLite para testes; contudo, recomenda-se a migração para uma solução relacional mais robusta (por exemplo, Heroku Postgres) para assegurar a integridade e a escalabilidade dos dados.
+
+- **Deploy e Integração Contínua:**  
+  - Realização do deploy da aplicação no Heroku, integrando o repositório Git para atualizações automáticas.
+  - Configuração de add-ons para monitoramento e registro de logs, a fim de detectar e corrigir eventuais anomalias no desempenho.
+
+## 3. Hospedagem do Frontend
+
+Para o frontend, desenvolvido em React.js, o processo de hospedagem envolverá os seguintes passos:
+
+- **Compilação e Otimização:**  
+  - Compilação da aplicação para gerar os arquivos estáticos (diretório `build`), garantindo a otimização dos recursos para entrega aos usuários.
+
+- **Deploy via Vercel:**  
+  - Publicação dos arquivos compilados na Vercel, aproveitando a infraestrutura global da plataforma para assegurar alta disponibilidade e desempenho.
+  - Configuração de variáveis de ambiente para definir os endpoints de comunicação com o backend hospedado no Heroku, promovendo uma integração eficiente entre as camadas da aplicação.
+
+## 4. Integração e Fluxo de Comunicação
+
+O fluxo operacional da aplicação será organizado da seguinte forma:
+
+1. **Acesso do Usuário:**  
+   O usuário acessa a interface da aplicação por meio do navegador (frontend hospedado na Vercel) ou através do aplicativo mobile.
+
+2. **Envio de Requisições:**  
+   O frontend encaminha requisições HTTP para a API desenvolvida em Flask e hospedada no Heroku.
+
+3. **Processamento e Resposta:**  
+   O backend processa as solicitações, interage com o banco de dados e executa as regras de negócio, retornando os dados processados em formato JSON.
+
+4. **Atualização da Interface:**  
+   Os dados recebidos pelo frontend são utilizados para atualizar dinamicamente a interface, proporcionando uma experiência de uso fluida e responsiva.
+
+## 5. Considerações Finais
+
+A escolha combinada das plataformas Heroku e Vercel permite explorar os pontos fortes de cada serviço, garantindo robustez e escalabilidade dentro dos parâmetros definidos pelo projeto acadêmico. A implementação de práticas de deploy contínuo e a configuração adequada dos ambientes de produção são essenciais para o sucesso da aplicação, contribuindo tanto para o aprendizado dos estudantes quanto para a oferta de uma solução funcional para microempreendedores do setor de beleza.
+
 
 > **Links Úteis**:
 >

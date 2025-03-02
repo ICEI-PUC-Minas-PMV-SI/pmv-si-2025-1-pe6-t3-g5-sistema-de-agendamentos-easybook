@@ -6,7 +6,9 @@
 
 `SEMESTRE: 6º`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O EasyBook é uma plataforma de agendamentos desenvolvida para microempreendedores que desejam otimizar a gestão de horários. A solução automatiza esse processo por meio de um sistema integrado (web e mobile), permitindo que clientes agendem serviços de forma prática e rápida.
+
+Com isso, o EasyBook reduz a carga de trabalho, evita conflitos de agenda e melhora a experiência do cliente, contribuindo para a fidelização e o crescimento do negócio.
 
 ## Integrantes
 

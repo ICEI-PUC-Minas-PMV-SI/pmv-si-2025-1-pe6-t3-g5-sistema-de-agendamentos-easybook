@@ -153,7 +153,7 @@ Oferece assistência a usuários e empresas que utilizam a plataforma. Inclui:
 
 Definição de como o software é estruturado em termos dos componentes que fazem parte da solução e do ambiente de hospedagem da aplicação.
 
-![arq](https://github.com/user-attachments/assets/b9402e05-8445-47c3-9d47-f11696e38a3d)
+![arq](https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-1-pe6-t3-g5-sistema-de-agendamentos-easybook/blob/main/docs/img/ArquiteturaEasyBook.drawio.png)
 
 
 # Tecnologias Utilizadas

@@ -124,10 +124,13 @@ Definição de como o software é estruturado em termos dos componentes que faze
  
  ## Ambiente de Desenvolvimento
   - Visual Studio Code (VS Code) – IDE principal para escrever e depurar código.
+  - Visual Studio - IDE da Microsoft para desenvolvimento.
+  - ASP.NET Core - framework para desenvolvimento de APIs.
 
  ## Linguagens de Programação
   - JavaScript – Utilizado para o desenvolvimento frontend e interações dinâmicas.
-  - Python – Utilizado para o backend, criação de API e manipulação de dados.
+  - .NET – Utilizado para o backend, criação de API e manipulação de dados.
+  - JAVA
 
  ## Desenvolvimento Frontend (Interface do Usuário)
   - React.js – Framework JavaScript para desenvolvimento de interfaces web dinâmicas e reativas.
@@ -139,19 +142,20 @@ Definição de como o software é estruturado em termos dos componentes que faze
  ## Backend e APIs
   - Flask (Python) – Framework leve para criação de APIs RESTful.
   - Requests (Python) – Biblioteca para realizar requisições HTTP e consumir APIs.
+  - ASP.NET Core - para desenvolvimnento de APIs.
 
 ## Relação entre as Tecnologias
-### 1️- O usuário acessa a aplicação via navegador (React.js) ou aplicativo mobile (React Native).
-### 2️- O frontend envia requisições HTTP para a API desenvolvida em Flask, utilizando chamadas AJAX/jQuery ou Fetch API no React.
-### 3️- O backend Flask processa as requisições e pode:
+### 1️- O usuário acessa a aplicação via navegador ou aplicativo mobile.
+### 2️- O frontend envia requisições HTTP para a API.
+### 3️- O backend processa as requisições e pode:
  - Buscar dados em um banco de dados.
  - Fazer chamadas externas via Requests.
- - Processar informações e retornar uma resposta em JSON.
+ - Processar informações e retornar uma resposta.
 ### 4️- O frontend recebe os dados da API e os exibe dinamicamente na interface.
 
 
 ![WhatsApp Image 2025-02-28 at 18 58 37](https://github.com/user-attachments/assets/cbacbd73-3051-4954-a703-0bab07c83267)
-Figura mostrando como as tecnologias estão relacionadas e a interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+Figura representando como as tecnologias estão relacionadas e a interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 
 

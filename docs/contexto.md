@@ -217,10 +217,3 @@ O fluxo operacional da aplicação será organizado da seguinte forma:
 
 A escolha combinada das plataformas Heroku e Vercel permite explorar os pontos fortes de cada serviço, garantindo robustez e escalabilidade dentro dos parâmetros definidos pelo projeto acadêmico. A implementação de práticas de deploy contínuo e a configuração adequada dos ambientes de produção são essenciais para o sucesso da aplicação, contribuindo tanto para o aprendizado dos estudantes quanto para a oferta de uma solução funcional para microempreendedores do setor de beleza.
 
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)

@@ -61,9 +61,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |-------|----------------------------------------|----|----|
 |RNF-001| O sistema deve executar gestão de agendas (Criar,editar,excluir horários) | ALTA | João, Bruno |
 |RNF-002| Serviço de Notificações | BAIXA | |
-|RNF-003| Gestão do fornecedores |  MÉDIA | |
-|RNF-004| O sistema deve executrar gestão de usuários (alteração, consulta e exclusão) |  ALTA | Gabriel, Larissa |
-|RNF-005| Gestão de serviços (consulta, inclusão e exclusão) | BAIXA | Jean, Lincoln |
+|RNF-003| O sistema deve executrar gestão de usuários, editar dados de perfil como nome, email, senha, descrição do perfil (fornecedores), excluir ou desativar perfil |  ALTA | Gabriel, Larissa |
+|RNF-004| Gestão de serviços (consulta, inclusão e exclusão) | BAIXA | Jean, Lincoln |
 
 
 

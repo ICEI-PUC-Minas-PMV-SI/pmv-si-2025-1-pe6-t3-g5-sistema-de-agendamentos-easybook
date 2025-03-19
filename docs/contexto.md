@@ -47,7 +47,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-001| O sistema deve executar gestão de agendas (Criar,editar,excluir horários) | ALTA | João, Bruno |
 |RF-002| Serviço de Notificações | BAIXA | Jean, Lincoln |
 |RF-003| O sistema deve executrar gestão de usuários, editar dados de perfil como nome, email, senha, descrição do perfil (fornecedores), autorização, autenticação, excluir ou desativar perfil |  ALTA | Gabriel, Larissa |
-|RF-004| Gestão de serviços (consulta, inclusão e exclusão) | BAIXA |  |
+
 
 
 
@@ -154,7 +154,7 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ### 4️- O frontend recebe os dados da API e os exibe dinamicamente na interface.
 
 
-![WhatsApp Image 2025-02-28 at 18 58 37](https://github.com/user-attachments/assets/cbacbd73-3051-4954-a703-0bab07c83267)
+----------------------------------------
 Figura representando como as tecnologias estão relacionadas e a interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 

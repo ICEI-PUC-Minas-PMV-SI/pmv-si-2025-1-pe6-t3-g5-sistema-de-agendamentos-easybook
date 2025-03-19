@@ -154,7 +154,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 ### 4️- O frontend recebe os dados da API e os exibe dinamicamente na interface.
 
 
-----------------------------------------
+![WhatsApp Image 2025-03-19 at 18 58 13](https://github.com/user-attachments/assets/61e4958a-2a8e-4f47-ba53-04af29f67849)
+
 Figura representando como as tecnologias estão relacionadas e a interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
 
 

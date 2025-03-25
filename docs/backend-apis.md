@@ -135,7 +135,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 ## Atualizar Agendamento
 
-### Método: PUT /appointments/:id
+#### Método: PUT /appointments/:id
 
 * Corpo da Requisição: (campos opcionais para atualização)
 

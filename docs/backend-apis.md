@@ -71,37 +71,41 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
       }
     }
     ```
+### API de Gestão da agenda:
 
-Listar Agendamentos (API da Gestão da agenda)
+## Listar Agendamentos
 
-Método: GET /appointments
+#### Método: GET /appointments
 
-Parâmetros:
+#### Parâmetros:
+* professionalId (opcional): Filtra agendamentos por profissional.
+* date (opcional): Filtra agendamentos por data.
 
-professionalId (opcional): Filtra agendamentos por profissional.
+> Resposta:
 
-date (opcional): Filtra agendamentos por data.
-
-Resposta:
-
+```
 {
   "message": "Success",
   "data": [ {...} ]
 }
+```
 
-Erro:
+> Erro:
 
+```
 {
   "message": "Error",
   "error": { "details": "Mensagem do erro" }
 }
+```
 
-Criar Agendamento
+## Criar Agendamento
 
-POST /appointments
+#### Método: POST /appointments
 
-Corpo da Requisição:
+* Corpo da Requisição:
 
+```
 {
   "clientId": "string",
   "professionalId": "string",
@@ -109,27 +113,33 @@ Corpo da Requisição:
   "date": "YYYY-MM-DD",
   "time": "HH:MM"
 }
+```
 
-Resposta:
+> Resposta:
 
+```
 {
   "message": "Appointment created successfully",
   "data": { "id": "uuid", ... }
 }
+```
 
-Erro:
+> Erro:
 
+```
 {
   "message": "Error",
   "error": { "details": "Missing required fields" }
 }
+```
 
-Atualizar Agendamento
+## Atualizar Agendamento
 
-PUT /appointments/:id
+### Método: PUT /appointments/:id
 
-Corpo da Requisição: (campos opcionais para atualização)
+* Corpo da Requisição: (campos opcionais para atualização)
 
+```
 {
   "clientId": "string",
   "professionalId": "string",
@@ -137,23 +147,25 @@ Corpo da Requisição: (campos opcionais para atualização)
   "date": "YYYY-MM-DD",
   "time": "HH:MM"
 }
+```
 
-Resposta:
+> Resposta:
 
+```
 {
   "message": "Appointment updated successfully",
   "data": { "id": "uuid", ... }
 }
+```
 
-Erro:
+> Erro:
 
+```
 {
   "message": "Error",
   "error": { "details": "Appointment not found" }
 }
-
-
-
+```
 
 
 ## Considerações de Segurança

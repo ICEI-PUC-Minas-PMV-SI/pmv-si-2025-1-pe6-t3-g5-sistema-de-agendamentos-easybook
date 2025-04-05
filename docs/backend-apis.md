@@ -166,6 +166,8 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
   "error": { "details": "Appointment not found" }
 }
 ```
+## Notificar Agendamento
+
 ### API de Notificações Mobile:
 
 #### Método: POST 
@@ -200,12 +202,11 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 #### Método: POST 
 
 * Corpo da Requisição:
-
 ```
-{
-  "servico": "string",
-  "dataHora": "YYYY-MM-DD HH:MM"
-}
+  {
+    "servico": "string",
+    "dataHora": "YYYY-MM-DD HH:MM"
+  }
 ```
 > Resposta:
 - Sucesso (200 OK)

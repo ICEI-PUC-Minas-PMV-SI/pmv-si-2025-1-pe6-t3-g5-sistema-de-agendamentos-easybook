@@ -181,28 +181,27 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 }
 ```
 > Resposta:
+
 ```
-- Sucesso (200 OK)
-    ```
-    {
-      "message": "Notificação enviada!",
-      "data": {
-        ...
-      }
-    }
-    ```
-  - Erro (400)
-    ```
-    {
-      
+{
+  "message": "Appointment updated successfully",
+  
+}
+```
+
+> Erro (400):
+
+```
+    {  
       "message": "Título, mensagem e token são obrigatórios."
     }
-  - Erro (500)
-    ```
-    {
+```
+> Erro (500):
+
+```
+    {  
       "message": "Erro ao enviar notificação."
     }
-    
 ```
 
 ### API de Notificações Web push:

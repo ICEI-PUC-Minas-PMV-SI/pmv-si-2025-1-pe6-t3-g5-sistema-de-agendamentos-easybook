@@ -181,6 +181,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 }
 ```
 > Resposta:
+```
 - Sucesso (200 OK)
     ```
     {
@@ -208,7 +209,10 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
     "dataHora": "YYYY-MM-DD HH:MM"
   }
 ```
+
 > Resposta:
+
+```
 - Sucesso (200 OK)
     ```
     {

@@ -166,6 +166,64 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
   "error": { "details": "Appointment not found" }
 }
 ```
+### API de Notificações Mobile:
+
+#### Método: POST 
+
+* Corpo da Requisição:
+
+```
+{
+  "servico": "string",
+  "dataHora": "YYYY-MM-DD HH:MM"
+}
+```
+> Resposta:
+- Sucesso (200 OK)
+    ```
+    {
+      "message": "Notificação enviada!",
+      "data": {
+        ...
+      }
+    }
+    ```
+  - Erro (4XX, 5XX)
+    ```
+    {
+      "message": "Erro ao enviar notificação:",
+      "message": "Título, mensagem e token são obrigatórios."
+    }
+```
+### API de Notificações Web push:
+
+#### Método: POST 
+
+* Corpo da Requisição:
+
+```
+{
+  "servico": "string",
+  "dataHora": "YYYY-MM-DD HH:MM"
+}
+```
+> Resposta:
+- Sucesso (200 OK)
+    ```
+    {
+      "message": "Agendamento adicionado com sucesso.",
+      
+    }
+    ```
+  - Erro (4XX, 5XX)
+    ```
+    {
+      "message": "Erro ao enviar notificação:",
+      "message": "Serviço e data/hora são obrigatórios."
+    }
+```
+
+
 
 
 ## Considerações de Segurança

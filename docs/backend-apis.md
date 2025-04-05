@@ -198,6 +198,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
       "message": "Título, mensagem e token são obrigatórios."
     }
 ```
+
 ### API de Notificações Web push:
 
 #### Método: POST 
@@ -214,18 +215,17 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 ```
 - Sucesso (200 OK)
-    ```
-    {
-      "message": "Agendamento adicionado com sucesso.",
-      
-    }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-    {
-      "message": "Erro ao enviar notificação:",
-      "message": "Serviço e data/hora são obrigatórios."
-    }
+{
+  "message": "Agendamento adicionado com sucesso."
+}
+```
+
+> Erro (4XX, 5XX):
+
+```
+{
+  "message": "Título, mensagem e token são obrigatórios."  
+}
 ```
 
 

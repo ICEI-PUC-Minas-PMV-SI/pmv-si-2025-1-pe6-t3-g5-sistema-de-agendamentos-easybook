@@ -191,12 +191,18 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
       }
     }
     ```
-  - Erro (4XX, 5XX)
+  - Erro (400)
     ```
     {
-      "message": "Erro ao enviar notificação:",
+      
       "message": "Título, mensagem e token são obrigatórios."
     }
+  - Erro (500)
+    ```
+    {
+      "message": "Erro ao enviar notificação."
+    }
+    
 ```
 
 ### API de Notificações Web push:
@@ -220,11 +226,11 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 }
 ```
 
-> Erro (4XX, 5XX):
+> Erro (400):
 
 ```
 {
-  "message": "Título, mensagem e token são obrigatórios."  
+  "message": "Serviço e data/hora são obrigatórios."  
 }
 ```
 

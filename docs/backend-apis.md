@@ -216,13 +216,6 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 }
 ```
 
-> Erro (Quando nenhum campo é preenchido):
-
-```
-    {  
-      "message": "Título, mensagem e token são obrigatórios."
-    }
-```
 > Erro (Em caso de erro interno):
 
 ```
@@ -254,13 +247,6 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 }
 ```
 
-> Erro (Quando nenhum campo é preenchido):
-
-```
-{
-  "message": "Serviço e data/hora são obrigatórios."  
-}
-```
 #### Método: GET '/appointments'
 ## Listagem de Agendamentos
 > Resposta:

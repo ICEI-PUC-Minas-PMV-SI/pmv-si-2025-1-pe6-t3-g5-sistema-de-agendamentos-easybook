@@ -1,20 +1,10 @@
 # APIs e Web Services
 
-*O planejamento de uma aplicação de APIS Web é uma etapa fundamental para o sucesso do projeto. Ao planejar adequadamente, você pode evitar muitos problemas e garantir que a sua API seja segura, escalável e eficiente.*
-
-*Aqui estão algumas etapas importantes que devem ser consideradas no planejamento de uma aplicação de APIS Web.*
-
-*[Inclua uma breve descrição do projeto.]*
-
 O EasyBook é uma plataforma de agendamento desenvolvida para profissionais do setor de beleza e autocuidado, como cabeleireiros e esteticistas. A solução automatiza a gestão de horários por meio de um sistema integrado (web e mobile), permitindo que os clientes agendem serviços de forma prática e rápida.
 
 Com isso, o EasyBook reduz a carga de trabalho dos microempreendedores, evita conflitos de agenda e melhora a experiência do cliente, contribuindo para a fidelização e o crescimento do negócio.
 
 ## Objetivos da API
-
-*O primeiro passo é definir os objetivos da sua API. O que você espera alcançar com ela? Você quer que ela seja usada por clientes externos ou apenas por aplicações internas? Quais são os recursos que a API deve fornecer?*
-
-*[Inclua os objetivos da sua api.]*
 
 A API da Gestão de agenda tem como objetivo principal permitir que clientes e profissionais da beleza gerenciem compromissos de forma simples e eficiente. Além disso, ela deve:
 
@@ -26,7 +16,6 @@ A API da Gestão de agenda tem como objetivo principal permitir que clientes e p
 
 
 ## Modelagem da Aplicação
-*[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]*
 
 A aplicação EasyBook foi modelada para facilitar o agendamento de serviços entre clientes e prestadores, com cinco entidades principais:
 
@@ -34,7 +23,7 @@ A aplicação EasyBook foi modelada para facilitar o agendamento de serviços en
 - Prestadores (prestadores): Relaciona-se com usuarios e armazena informações complementares, como fotos, descrição dos serviços e se aceita avaliações.
 - Horários (horarios): Define os horários disponíveis de cada prestador, incluindo data, duração e limite de clientes.
 - Atendimentos (atendimentos): Representa um agendamento feito por um cliente, com status controlado via enum (solicitado, confirmado, realizado, cancelado).
-- Avaliações (avaliacoes): Associadas aos atendimentos, permitem que o cliente avalie o serviço prestado com estrelas e comentário.
+*- Avaliações (avaliacoes): Associadas aos atendimentos, permitem que o cliente avalie o serviço prestado com estrelas e comentário.*
 
 A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabelas, e campos lógicos de exclusão (deletado) para preservar o histórico. Essa estrutura garante flexibilidade, rastreabilidade e suporte à evolução da aplicação.
 
@@ -42,10 +31,6 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 
 
 ## Tecnologias Utilizadas
-
-*Existem muitas tecnologias diferentes que podem ser usadas para desenvolver APIs Web. A tecnologia certa para o seu projeto dependerá dos seus objetivos, dos seus clientes e dos recursos que a API deve fornecer.*
-
-*[Lista das tecnologias principais que serão utilizadas no projeto.]*
 
 A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
@@ -57,32 +42,12 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 ## API Endpoints
 
-*[Liste os principais endpoints da API, incluindo as operações disponíveis, os parâmetros esperados e as respostas retornadas.]*
-
 ### Endpoint 1
 - Método: GET
 - URL: /endpoint1
 - Parâmetros:
   - param1: [descrição]
-- Resposta:
-  - Sucesso (200 OK)
-    ```
-    {
-      "message": "Success",
-      "data": {
-        ...
-      }
-    }
-    ```
-  - Erro (4XX, 5XX)
-    ```
-    {
-      "message": "Error",
-      "error": {
-        ...
-      }
-    }
-    ```
+
 ### API de Gestão da agenda:
 
 ## Listar Agendamentos
@@ -456,46 +421,60 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 ## Considerações de Segurança
 
-*[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]*
-
 - Implementação de autenticação por senha e armazenamento seguro das credenciais (RNF-003).
-- Validação de entrada de dados para prevenir ataques como SQL Injection e XSS.
 - Uso de HTTPS para garantir comunicação segura.
 - Conformidade com a LGPD para proteção de dados do usuário (RNF-005).
 
 ## Implantação
 
-*[Instruções para implantar a aplicação distribuída em um ambiente de produção.]*
+## 1. Requisitos de Hardware e Software
 
-*1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.*
-*2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.*
-*3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.*
-*4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.*
-*5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.*
+- **Servidor**: Mínimo de 2 vCPUs, 4 GB de RAM e 20 GB de armazenamento.
+- **Sistema Operacional**: Linux (Ubuntu recomendado).
+- **Dependências**:
+  - Node.js e npm (para a aplicação em JavaScript).
+  - Java JDK (versão compatível com o projeto).
+  - Maven ou Gradle (dependendo da aplicação Java).
+  - Git e acesso à internet para instalação de pacotes e atualizações.
 
-- Configurar um servidor ou usar uma solução em nuvem (AWS, GCP, etc.).
-- Instalar dependências com npm install.
-- Configurar variáveis de ambiente.
-- Executar a API com node server.js ou npm start.
-- Configurar monitoramento e logs para manutenção.
+## 2. Plataforma de Hospedagem
+
+- Utilizar a **AWS** como plataforma de hospedagem.
+- Recomenda-se o uso de uma instância **EC2**.
+- Alternativas: AWS Elastic Beanstalk (para Java) ou ECS (para aplicações conteinerizadas).
+
+## 3. Configuração do Ambiente de Implantação
+
+- Acesse a instância EC2 via **SSH**.
+- Clone o repositório da aplicação com Git.
+- Para a parte em **Node.js**:
+  - Execute `npm install` para instalar as dependências.
+- Para a parte em **Java**:
+  - Compile e construa o projeto com `mvn package` ou `gradle build`.
+- Configure as **variáveis de ambiente**, utilizando um arquivo `.env` ou diretamente no sistema.
+
+## 4. Deploy da Aplicação
+
+- **Node.js**:
+  - Inicie com `node server.js` ou `npm start`.
+- **Java**:
+  - Execute com `java -jar nome-do-arquivo.jar`.
+- Use gerenciadores de processo:
+  - PM2 para aplicações Node.js.
+  - `systemd` ou `nohup` para aplicações Java.
+- Certifique-se de que as portas estejam liberadas no **grupo de segurança** da instância EC2.
+
+## 5. Testes e Manutenção
+
+- Realize testes manuais e/ou automatizados para ambas as aplicações.
 
 ## Testes
-
-*[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]*
-
-*1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.*
-*2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.*
-*3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.*
-*4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.*
-*5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.*
 
 - Testes unitários: Testar funções individuais da API.
 - Testes de integração: Garantir a interação correta entre componentes.
 - Testes de carga: Avaliar o desempenho da API sob grande volume de requisições (RNF-006).
 
 # Referências
-
-*Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.*
 
 - Documentação do Express.js
 - Guia sobre CORS

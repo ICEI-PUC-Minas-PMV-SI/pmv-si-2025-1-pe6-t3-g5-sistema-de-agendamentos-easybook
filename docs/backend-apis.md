@@ -218,8 +218,9 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 > Resposta:
 
-```
 - Sucesso (200 OK)
+  
+```
 {
   "message": "Agendamento adicionado com sucesso."
 }
@@ -252,8 +253,9 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 > Resposta:
 
-```
 - Sucesso (200 OK)
+  
+```
 {
   "message": "Usuário cadastrado com sucesso!"
 }
@@ -281,8 +283,9 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 > Resposta:
 
-```
 - Sucesso (200 OK)
+  
+```
 [
   {
     "id": 1,
@@ -301,8 +304,9 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 > Resposta:
 
-```
 - Sucesso (200 OK)
+
+```
 {
   "id": 1,
   "usuario": "string",
@@ -337,8 +341,9 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 ```
 > Resposta:
 
-```
 - Sucesso (200 OK)
+  
+```
 {
   "message": "Usuário atualizado com sucesso!"
 }
@@ -373,8 +378,9 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 > Resposta:
 
-```
 - Sucesso (200 OK)
+  
+```
 {
   "message": "Usuário deletado com sucesso!"
 }
@@ -407,8 +413,9 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 ```
 > Resposta:
 
-```
 - Sucesso (200 OK)
+  
+```
 {
   "token": "token"
 }

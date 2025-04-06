@@ -58,12 +58,12 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
   "message": "Success",
   "data": [
     {
-      "id": "uuid-123",
-      "clientId": "cliente123",
-      "professionalId": "prof456",
-      "serviceId": "servico789",
-      "date": "2025-04-06",
-      "time": "14:30:00"
+      "id": "gerado-com-uuid",
+      "clientId": "string",
+      "professionalId": "string",
+      "serviceId": "string",
+      "date": "YYYY-MM-DD",
+      "time": "HH:MM:SS"
     },
     // ... outros agendamentos
   ]
@@ -89,11 +89,11 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 
 ```
 {
-  "clientId": "cliente123",
-  "professionalId": "prof456",
-  "serviceId": "servico789",
-  "date": "2025-04-06",
-  "time": "14:30:00"
+  "clientId": "string",
+  "professionalId": "string",
+  "serviceId": "string",
+  "date": "YYYY-MM-DD",
+  "time": "HH:MM:SS"
 }
 ```
 
@@ -104,11 +104,11 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
   "message": "Appointment created successfully",
   "data": {
     "id": "gerado-com-uuid",
-    "clientId": "cliente123",
-    "professionalId": "prof456",
-    "serviceId": "servico789",
-    "date": "2025-04-06",
-    "time": "14:30:00"
+    "clientId": "string",
+    "professionalId": "string",
+    "serviceId": "string",
+    "date": "YYYY-MM-DD",
+    "time": "HH:MM:SS"
   }
 }
 ```
@@ -142,8 +142,8 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 > Exemplo de Requisição
 ```
 {
-  "date": "2025-04-07",
-  "time": "15:00:00"
+  "date": "YYYY-MM-DD",
+  "time": "HH:MM:SS"
 }
 ```
 
@@ -152,12 +152,12 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 {
   "message": "Appointment updated successfully",
   "data": {
-    "id": "uuid-123",
-    "clientId": "cliente123",
-    "professionalId": "prof456",
-    "serviceId": "servico789",
-    "date": "2025-04-07",
-    "time": "15:00:00"
+    "id": "gerado-com-uuid",
+    "clientId": "string",
+    "professionalId": "string",
+    "serviceId": "string",
+    "date": "YYYY-MM-DD",
+    "time": "HH:MM:SS"
   }
 }
 ```

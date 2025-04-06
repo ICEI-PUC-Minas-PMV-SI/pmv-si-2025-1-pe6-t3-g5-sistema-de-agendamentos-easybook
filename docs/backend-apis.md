@@ -427,7 +427,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 ## Implantação
 
-## 1. Requisitos de Hardware e Software
+#### 1. Requisitos de Hardware e Software
 
 - **Servidor**: Mínimo de 2 vCPUs, 4 GB de RAM e 20 GB de armazenamento.
 - **Sistema Operacional**: Linux (Ubuntu recomendado).
@@ -437,13 +437,13 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
   - Maven ou Gradle (dependendo da aplicação Java).
   - Git e acesso à internet para instalação de pacotes e atualizações.
 
-## 2. Plataforma de Hospedagem
+#### 2. Plataforma de Hospedagem
 
 - Utilizar a **AWS** como plataforma de hospedagem.
 - Recomenda-se o uso de uma instância **EC2**.
 - Alternativas: AWS Elastic Beanstalk (para Java) ou ECS (para aplicações conteinerizadas).
 
-## 3. Configuração do Ambiente de Implantação
+#### 3. Configuração do Ambiente de Implantação
 
 - Acesse a instância EC2 via **SSH**.
 - Clone o repositório da aplicação com Git.
@@ -453,7 +453,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
   - Compile e construa o projeto com `mvn package` ou `gradle build`.
 - Configure as **variáveis de ambiente**, utilizando um arquivo `.env` ou diretamente no sistema.
 
-## 4. Deploy da Aplicação
+#### 4. Deploy da Aplicação
 
 - **Node.js**:
   - Inicie com `node server.js` ou `npm start`.
@@ -464,7 +464,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
   - `systemd` ou `nohup` para aplicações Java.
 - Certifique-se de que as portas estejam liberadas no **grupo de segurança** da instância EC2.
 
-## 5. Testes e Manutenção
+#### 5. Testes e Manutenção
 
 - Realize testes manuais e/ou automatizados para ambas as aplicações.
 
@@ -474,7 +474,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 - Testes de integração: Garantir a interação correta entre componentes.
 - Testes de carga: Avaliar o desempenho da API sob grande volume de requisições (RNF-006).
 
-# Referências
+## Referências
 
 - Documentação do Express.js
 - Guia sobre CORS

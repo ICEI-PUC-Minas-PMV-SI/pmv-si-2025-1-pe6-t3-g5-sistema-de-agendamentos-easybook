@@ -9,6 +9,7 @@ Com isso, o EasyBook reduz a carga de trabalho dos microempreendedores, evita co
 - Permitir que clientes agendem, editem e cancelem seus compromissos.
 - Possibilitar que profissionais personalizem e gerenciem sua agenda conforme disponibilidade.
 - Garantir a segurança e privacidade dos dados dos usuários.
+- Permitir a criação, alteração e exclusão de usuários.
 - Fornecer uma interface rápida e responsiva.
 - Facilitar futuras integrações com outros sistemas.
 
@@ -33,6 +34,8 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 - Body-parser para processamento de JSON.
 - CORS para controle de acessos externos.
 - UUID para geração de identificadores únicos.
+- Java com SpringBoot para o backend.
+- JWT como token de acesso.
 
 ## API Endpoints
 
@@ -524,3 +527,4 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 
 - Documentação do Express.js
 - Guia sobre CORS
+- https://docs.spring.io/spring-boot/documentation.html

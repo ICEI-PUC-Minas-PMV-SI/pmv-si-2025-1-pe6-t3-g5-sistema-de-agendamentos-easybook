@@ -28,6 +28,8 @@ A API da Gestão de agenda tem como objetivo principal permitir que clientes e p
 ## Modelagem da Aplicação
 *[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]*
 
+![image](https://github.com/user-attachments/assets/5de1639a-ec74-47f4-a852-06859311f2ff)
+
 
 ## Tecnologias Utilizadas
 

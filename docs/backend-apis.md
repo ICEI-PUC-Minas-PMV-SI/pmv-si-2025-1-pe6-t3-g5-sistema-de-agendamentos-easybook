@@ -6,14 +6,11 @@ Com isso, o EasyBook reduz a carga de trabalho dos microempreendedores, evita co
 
 ## Objetivos da API
 
-A API da Gestão de agenda tem como objetivo principal permitir que clientes e profissionais da beleza gerenciem compromissos de forma simples e eficiente. Além disso, ela deve:
-
 - Permitir que clientes agendem, editem e cancelem seus compromissos.
 - Possibilitar que profissionais personalizem e gerenciem sua agenda conforme disponibilidade.
 - Garantir a segurança e privacidade dos dados dos usuários.
 - Fornecer uma interface rápida e responsiva.
 - Facilitar futuras integrações com outros sistemas.
-
 
 ## Modelagem da Aplicação
 
@@ -32,13 +29,10 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 
 ## Tecnologias Utilizadas
 
-A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
-
 - Node.js e Express para o backend.
 - Body-parser para processamento de JSON.
 - CORS para controle de acessos externos.
 - UUID para geração de identificadores únicos.
-- Google BigQuery para armazenamento futuro de dados.
 
 ## API Endpoints
 
@@ -48,7 +42,6 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 * Retorna a lista de agendamentos cadastrados, com possibilidade de filtrar por professionalId e/ou date.
 
 #### Método: GET /appointments
-#### URL: http://localhost:5000/appointments
 #### Parâmetros:
 * professionalId (opcional): Filtra agendamentos por profissional.
 * date (opcional): Filtra agendamentos por data.
@@ -91,16 +84,8 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 * Cria um novo agendamento no banco de dados.
   
 #### Método: POST /appointments
-#### URL: http://localhost:5000/appointments
 
 > Corpo da Requisição:
-* clientId (string) – (Obrigatório)
-* professionalId (string) – (Obrigatório)
-* serviceId (string) – (Obrigatório)
-* date (string no formato YYYY-MM-DD) – (Obrigatório)
-* time (string no formato HH:MM:SS) – (Obrigatório)
-
-> Exemplo da Requisição:
 
 ```
 {
@@ -150,7 +135,6 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 * Atualiza um agendamento existente identificado pelo id informado na URL.
 
 #### Método: PUT /appointments/:id
-#### URL: http://localhost:5000/appointments/:id
 * Substitua :id pelo ID real do agendamento.
 
 > Corpo da Requisição: JSON com os campos a serem atualizados (os campos são opcionais, mas deve haver pelo menos um).
@@ -483,9 +467,9 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 ## Considerações de Segurança
 
-- Implementação de autenticação por senha e armazenamento seguro das credenciais (RNF-003).
+- Implementação de autenticação por senha e armazenamento seguro das credenciais.
 - Uso de HTTPS para garantir comunicação segura.
-- Conformidade com a LGPD para proteção de dados do usuário (RNF-005).
+- Conformidade com a LGPD para proteção de dados do usuário.
 
 ## Implantação
 
@@ -496,14 +480,13 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 - **Dependências**:
   - Node.js e npm (para a aplicação em JavaScript).
   - Java JDK (versão compatível com o projeto).
-  - Maven ou Gradle (dependendo da aplicação Java).
+  - Maven.
   - Git e acesso à internet para instalação de pacotes e atualizações.
 
 #### 2. Plataforma de Hospedagem
 
 - Utilizar a **AWS** como plataforma de hospedagem.
 - Recomenda-se o uso de uma instância **EC2**.
-- Alternativas: AWS Elastic Beanstalk (para Java) ou ECS (para aplicações conteinerizadas).
 
 #### 3. Configuração do Ambiente de Implantação
 
@@ -512,7 +495,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 - Para a parte em **Node.js**:
   - Execute `npm install` para instalar as dependências.
 - Para a parte em **Java**:
-  - Compile e construa o projeto com `mvn package` ou `gradle build`.
+  - Compile e construa o projeto com `mvn package`.
 - Configure as **variáveis de ambiente**, utilizando um arquivo `.env` ou diretamente no sistema.
 
 #### 4. Deploy da Aplicação
@@ -540,4 +523,3 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 - Documentação do Express.js
 - Guia sobre CORS
-- Uso do BigQuery

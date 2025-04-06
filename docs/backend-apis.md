@@ -28,6 +28,14 @@ A API da Gestão de agenda tem como objetivo principal permitir que clientes e p
 ## Modelagem da Aplicação
 *[Descreva a modelagem da aplicação, incluindo a estrutura de dados, diagramas de classes ou entidades, e outras representações visuais relevantes.]*
 
+A aplicação EasyBook foi modelada para facilitar o agendamento de serviços entre clientes e prestadores, com cinco entidades principais:
+Usuários (usuarios): Armazena dados de autenticação e identificação, diferenciando clientes e prestadores por meio do campo tipo.
+Prestadores (prestadores): Relaciona-se com usuarios e armazena informações complementares, como fotos, descrição dos serviços e se aceita avaliações.
+Horários (horarios): Define os horários disponíveis de cada prestador, incluindo data, duração e limite de clientes.
+Atendimentos (atendimentos): Representa um agendamento feito por um cliente, com status controlado via enum (solicitado, confirmado, realizado, cancelado).
+Avaliações (avaliacoes): Associadas aos atendimentos, permitem que o cliente avalie o serviço prestado com estrelas e comentário.
+A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabelas, e campos lógicos de exclusão (deletado) para preservar o histórico. Essa estrutura garante flexibilidade, rastreabilidade e suporte à evolução da aplicação.
+
 ![image](https://github.com/user-attachments/assets/5de1639a-ec74-47f4-a852-06859311f2ff)
 
 

@@ -233,8 +233,207 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 }
 ```
 
+###  API - Usuários e Autenticação:
 
+## Cadastrar Usuários
 
+#### Método: POST /api/user
+
+* Corpo da Requisição:
+```
+{
+  "usuario": "string",
+  "senha": "string",
+  "tipo": "string",
+  "nomeExibicao": "string",
+  "fotoPerfil": "string"
+}
+```
+
+> Resposta:
+
+```
+- Sucesso (200 OK)
+{
+  "message": "Usuário cadastrado com sucesso!"
+}
+```
+
+> Erro (400):
+
+```
+{
+  "message": "A senha não pode ser nula ou vazia." 
+}
+```
+
+> Erro (500):
+
+```
+{
+  "message": "Erro inesperado ao cadastrar o usuário." 
+}
+```
+
+## Listar Usuários
+
+#### Método: GET /api/user
+
+> Resposta:
+
+```
+- Sucesso (200 OK)
+[
+  {
+    "id": 1,
+    "usuario": "string",
+    "senha": "string (criptografada)",
+    "tipo": "string",
+    "nomeExibicao": "string",
+    "fotoPerfil": "string",
+    "deletado": false
+  }
+]
+```
+## Buscar Usuário por ID
+
+#### Método: GET /api/user/:id
+
+> Resposta:
+
+```
+- Sucesso (200 OK)
+{
+  "id": 1,
+  "usuario": "string",
+  "senha": "string (criptografada)",
+  "tipo": "string",
+  "nomeExibicao": "string",
+  "fotoPerfil": "string",
+  "deletado": false
+}
+```
+> Erro (404):
+
+```
+{
+  "message": "Usuário não encontrado." 
+}
+```
+
+## Atualizar Usuário
+
+#### Método: PUT /api/user/:id
+
+* Corpo da Requisição: (campos opcionais para atualização)
+```
+{
+  "usuario": "string",
+  "senha": "string",
+  "tipo": "string",
+  "nomeExibicao": "string",
+  "fotoPerfil": "string"
+}
+```
+> Resposta:
+
+```
+- Sucesso (200 OK)
+{
+  "message": "Usuário atualizado com sucesso!"
+}
+```
+> Erro (409):
+
+```
+{
+  "message": "Já existe um usuário com esse nome de login."
+}
+```
+
+> Erro (404):
+
+```
+{
+   "message": "Usuário não encontrado." 
+}
+```
+
+> Erro (500):
+
+```
+{
+   "message": "Erro ao atualizar usuário." 
+}
+```
+
+## Deletar Usuário
+
+#### Método: DELETE /api/user/:id
+
+> Resposta:
+
+```
+- Sucesso (200 OK)
+{
+  "message": "Usuário deletado com sucesso!"
+}
+```
+> Erro (404):
+
+```
+{
+  "message": "Usuário não encontrado." 
+}
+```
+> Erro (500):
+
+```
+{
+   "message": "Erro ao deletar usuário." 
+}
+```
+
+## Autenticação de Usuarios (Login)
+
+#### Método: POST /login
+
+* Corpo da Requisição:
+```
+{
+  "usuario": "string",
+  "senha": "string"
+}
+```
+> Resposta:
+
+```
+- Sucesso (200 OK)
+{
+  "token": "token"
+}
+```
+> Erro (400):
+
+```
+{
+  "message": "Usuário e senha são obrigatórios."
+}
+```
+> Erro (401):
+
+```
+{
+  "message": "Credenciais inválidas."
+}
+```
+> Erro (500):
+
+```
+{
+  "message": "Erro interno no servidor."
+}
+```
 
 ## Considerações de Segurança
 

@@ -233,13 +233,14 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 
 ### API de Notificações Web push:
 
-#### Método: POST 
+#### Método: POST '/appointments'
 
 * Corpo da Requisição:
 ```
   {
-    "servico": "string",
-    "dataHora": "YYYY-MM-DD HH:MM"
+    id_client: req.body.id_client,
+    Datetime: req.body.Datetime,
+    status: req.body.status
   }
 ```
 
@@ -249,7 +250,7 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
   
 ```
 {
-  "message": "Agendamento adicionado com sucesso."
+  "message": `Agendamento criado: ID ${appointment.id}, Cliente ID: ${appointment.id_client}, Data e Hora: ${appointment.Datetime}`
 }
 ```
 
@@ -259,6 +260,22 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 {
   "message": "Serviço e data/hora são obrigatórios."  
 }
+```
+#### Método: GET '/appointments'
+## Listagem de Agendamentos
+> Resposta:
+
+- Sucesso (200 OK)
+  
+```
+[
+  {
+    "id" String @id @default(auto()) @map("_id") @db.ObjectId
+    "id_client" String
+    "Datetime" DateTime
+    "status" String
+  }
+]
 ```
 
 ###  API - Usuários e Autenticação:

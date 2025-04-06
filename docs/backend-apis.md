@@ -216,14 +216,14 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 }
 ```
 
-> Erro (400):
+> Erro (Quando nenhum campo é preenchido):
 
 ```
     {  
       "message": "Título, mensagem e token são obrigatórios."
     }
 ```
-> Erro (500):
+> Erro (Em caso de erro interno):
 
 ```
     {  
@@ -253,7 +253,7 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 }
 ```
 
-> Erro (400):
+> Erro (Quando nenhum campo é preenchido):
 
 ```
 {

@@ -42,12 +42,6 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 ## API Endpoints
 
-### Endpoint 1
-- Método: GET
-- URL: /endpoint1
-- Parâmetros:
-  - param1: [descrição]
-
 ### API de Gestão da agenda:
 
 ## Listar Agendamentos 

@@ -50,21 +50,38 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 
 ### API de Gestão da agenda:
 
-## Listar Agendamentos
+## Listar Agendamentos 
+* Retorna a lista de agendamentos cadastrados, com possibilidade de filtrar por professionalId e/ou date.
 
 #### Método: GET /appointments
-
+#### URL: http://localhost:5000/appointments
 #### Parâmetros:
 * professionalId (opcional): Filtra agendamentos por profissional.
 * date (opcional): Filtra agendamentos por data.
+
+> Exemplo:
+
+* Sem Filtro: GET http://localhost:5000/appointments
+* Com Filtros: GET http://localhost:5000/appointments?professionalId=prof456&date=2025-04-06
 
 > Resposta:
 
 ```
 {
   "message": "Success",
-  "data": [ {...} ]
+  "data": [
+    {
+      "id": "uuid-123",
+      "clientId": "cliente123",
+      "professionalId": "prof456",
+      "serviceId": "servico789",
+      "date": "2025-04-06",
+      "time": "14:30:00"
+    },
+    // ... outros agendamentos
+  ]
 }
+
 ```
 
 > Erro:
@@ -72,23 +89,32 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 ```
 {
   "message": "Error",
-  "error": { "details": "Mensagem do erro" }
+  "error": "Mensagem de erro detalhada"
 }
 ```
 
 ## Criar Agendamento
-
+* Cria um novo agendamento no banco de dados.
+  
 #### Método: POST /appointments
+#### URL: http://localhost:5000/appointments
 
-* Corpo da Requisição:
+> Corpo da Requisição:
+* clientId (string) – (Obrigatório)
+* professionalId (string) – (Obrigatório)
+* serviceId (string) – (Obrigatório)
+* date (string no formato YYYY-MM-DD) – (Obrigatório)
+* time (string no formato HH:MM:SS) – (Obrigatório)
+
+> Exemplo da Requisição:
 
 ```
 {
-  "clientId": "string",
-  "professionalId": "string",
-  "serviceId": "string",
-  "date": "YYYY-MM-DD",
-  "time": "HH:MM"
+  "clientId": "cliente123",
+  "professionalId": "prof456",
+  "serviceId": "servico789",
+  "date": "2025-04-06",
+  "time": "14:30:00"
 }
 ```
 
@@ -97,11 +123,18 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 ```
 {
   "message": "Appointment created successfully",
-  "data": { "id": "uuid", ... }
+  "data": {
+    "id": "gerado-com-uuid",
+    "clientId": "cliente123",
+    "professionalId": "prof456",
+    "serviceId": "servico789",
+    "date": "2025-04-06",
+    "time": "14:30:00"
+  }
 }
 ```
 
-> Erro:
+> Erro (Quando faltam campos obrigatórios):
 
 ```
 {
@@ -110,32 +143,46 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 }
 ```
 
-## Atualizar Agendamento
-
-#### Método: PUT /appointments/:id
-
-* Corpo da Requisição: (campos opcionais para atualização)
+> Erro (Em caso de erro interno):
 
 ```
 {
-  "clientId": "string",
-  "professionalId": "string",
-  "serviceId": "string",
-  "date": "YYYY-MM-DD",
-  "time": "HH:MM"
+  "message": "Error",
+  "error": "Mensagem de erro detalhada"
+}
+```
+
+## Atualizar Agendamento
+* Atualiza um agendamento existente identificado pelo id informado na URL.
+
+#### Método: PUT /appointments/:id
+#### URL: http://localhost:5000/appointments/:id
+* Substitua :id pelo ID real do agendamento.
+
+> Corpo da Requisição: JSON com os campos a serem atualizados (os campos são opcionais, mas deve haver pelo menos um).
+
+> Exemplo de Requisição
+```
+{
+  "date": "2025-04-07",
+  "time": "15:00:00"
 }
 ```
 
 > Resposta:
-
-```
 {
   "message": "Appointment updated successfully",
-  "data": { "id": "uuid", ... }
+  "data": {
+    "id": "uuid-123",
+    "clientId": "cliente123",
+    "professionalId": "prof456",
+    "serviceId": "servico789",
+    "date": "2025-04-07",
+    "time": "15:00:00"
+  }
 }
-```
 
-> Erro:
+> Erro (Quando o Agendamento não é encontrado):
 
 ```
 {
@@ -143,6 +190,25 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
   "error": { "details": "Appointment not found" }
 }
 ```
+
+> Erro (Quando nenhum campo para atualização é fornecido):
+
+```
+{
+  "message": "Error",
+  "error": { "details": "No fields provided for update" }
+}
+```
+
+> Erro (Em caso de erro interno):
+
+```
+{
+  "message": "Error",
+  "error": "Mensagem de erro detalhada"
+}
+```
+
 ## Notificar Agendamento
 
 ### API de Notificações Mobile:

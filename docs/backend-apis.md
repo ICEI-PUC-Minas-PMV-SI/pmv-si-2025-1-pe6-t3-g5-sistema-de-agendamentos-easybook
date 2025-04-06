@@ -189,9 +189,10 @@ A modelagem utiliza chaves estrangeiras para garantir integridade entre as tabel
 }
 ```
 
-## Notificar Agendamento
 
 ### API de Notificações Mobile:
+
+## Notificar Agendamento
 
 #### Método: POST 
 

@@ -164,6 +164,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
 ```
 
 > Resposta:
+```
 {
   "message": "Appointment updated successfully",
   "data": {
@@ -175,6 +176,7 @@ A API da Gestão de agenda foi desenvolvida utilizando as seguintes tecnologias:
     "time": "15:00:00"
   }
 }
+```
 
 > Erro (Quando o Agendamento não é encontrado):
 

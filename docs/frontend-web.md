@@ -9,10 +9,6 @@ Com isso, o EasyBook melhora significativamente a experiência do usuário final
 ## Projeto da Interface Web
 
 Este projeto de front-end contempla o desenvolvimento completo da camada visual da aplicação, incluindo:
-- Layout das páginas com base em wireframes definidos.
-- Implementação de interações do usuário (formulários, menus, navegação etc.).
-- Adaptação a diferentes tamanhos de tela (design responsivo).
-- Aplicação de princípios de UX/UI.
 
 ### Wireframes
 
@@ -23,10 +19,13 @@ Exemplo:
 > *Wireframe da tela inicial da aplicação.*
 
 
+- [Wireframes do Easybook no Figma](https://www.figma.com/design/juU3fxkgVJXXccndVplkDl/EasyBook--Copy-?node-id=2001-3&m=draw)
+
+
 ### Design Visual
 O design da aplicação foi definido com os seguintes elementos visuais:
 
-- **Paleta de cores:** `#123456` (primária), `#abcdef` (secundária), branco e cinza neutro.
+- **Paleta de cores:** `#8B5CF6` (primária), `#abcdef` (secundária), branco e cinza neutro.
 - **Tipografia:** Fonte principal: *Inter*, secundária: *Roboto*.
 - **Ícones:** Usados via biblioteca *Phosphor Icons*.
 - **Estilo:** Minimalista, com foco em clareza e hierarquia visual.

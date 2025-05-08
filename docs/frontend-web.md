@@ -1,6 +1,10 @@
 # Front-end Web
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O **EasyBook** é uma plataforma de agendamento desenvolvida para profissionais do setor de beleza e autocuidado, como cabeleireiros e esteticistas. Esta etapa do projeto foca no desenvolvimento da **interface web**, proporcionando uma experiência visual clara, intuitiva e acessível aos usuários.
+
+A interface Web permite que clientes realizem agendamentos de forma prática e rápida, ao mesmo tempo em que os profissionais podem visualizar e organizar seus horários com facilidade. O front-end é projetado com foco em usabilidade e integração fluida com a API da aplicação.
+
+Com isso, o EasyBook melhora significativamente a experiência do usuário final, contribui para a fidelização dos clientes e auxilia no crescimento dos microempreendedores ao reduzir erros e conflitos na agenda.
 
 ## Projeto da Interface Web
 

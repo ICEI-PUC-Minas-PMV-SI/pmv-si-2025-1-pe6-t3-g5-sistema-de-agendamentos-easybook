@@ -23,7 +23,9 @@ Com isso, o EasyBook melhora significativamente a experiência do usuário final
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
 ## Tecnologias Utilizadas
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+- Git e GitHub (controle de versão)
+- Figma (para design e prototipagem)
+- Radix (para paleta de cores)
 
 ## Considerações de Segurança
 
@@ -51,4 +53,6 @@ Com isso, o EasyBook melhora significativamente a experiência do usuário final
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+- [Figma – Documentação oficial](https://help.figma.com/)
+- [Radix – Documentação](https://www.radix-ui.com/blog/themes-3)
+

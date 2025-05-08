@@ -13,13 +13,13 @@ Este projeto de front-end contempla o desenvolvimento completo da camada visual 
 ### Wireframes
 [Link do Wireframes do Easybook no Figma](https://www.figma.com/design/juU3fxkgVJXXccndVplkDl/EasyBook--Copy-?node-id=2001-3&m=draw)
 
-![Tela home](./docs/img/wireframe-home.jpeg)  
+![Tela home](./img/wireframe-home.jpeg)  
 > *Wireframe da tela inicial da aplicação.*
 
-![Tela agenda](./docs/img/wireframe-agenda.jpeg)  
+![Tela agenda](./img/wireframe-agenda.jpeg)  
 > *Wireframe da tela de edição de agenda da aplicação.*
 
-![Tela login](./docs/img/wireframe-login.jpeg)  
+![Tela login](./img/wireframe-login.jpeg)  
 > *Wireframe da tela de login da aplicação.*
 
 

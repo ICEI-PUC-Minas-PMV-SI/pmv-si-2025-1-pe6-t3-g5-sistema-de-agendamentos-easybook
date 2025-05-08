@@ -11,15 +11,16 @@ Com isso, o EasyBook melhora significativamente a experiência do usuário final
 Este projeto de front-end contempla o desenvolvimento completo da camada visual da aplicação, incluindo:
 
 ### Wireframes
+[Link do Wireframes do Easybook no Figma](https://www.figma.com/design/juU3fxkgVJXXccndVplkDl/EasyBook--Copy-?node-id=2001-3&m=draw)
 
-[Você pode inserir imagens aqui (após fazer o upload no repositório) ou links para os protótipos.]
-
-Exemplo:
-![Tela Inicial](./wireframes/home.png)  
+![Tela home](./docs/img/wireframe-home.jpeg)  
 > *Wireframe da tela inicial da aplicação.*
 
+![Tela agenda](./docs/img/wireframe-agenda.jpeg)  
+> *Wireframe da tela de edição de agenda da aplicação.*
 
-- [Wireframes do Easybook no Figma](https://www.figma.com/design/juU3fxkgVJXXccndVplkDl/EasyBook--Copy-?node-id=2001-3&m=draw)
+![Tela login](./docs/img/wireframe-login.jpeg)  
+> *Wireframe da tela de login da aplicação.*
 
 
 ### Design Visual

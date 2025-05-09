@@ -41,6 +41,8 @@ O design da aplicação foi definido com os seguintes elementos visuais:
 - Git e GitHub (controle de versão)
 - Figma (para design e prototipagem)
 - Radix (para paleta de cores)
+- Visual Studio Code
+- JavaScript, HTML, CSS
 
 ## Considerações de Segurança
 

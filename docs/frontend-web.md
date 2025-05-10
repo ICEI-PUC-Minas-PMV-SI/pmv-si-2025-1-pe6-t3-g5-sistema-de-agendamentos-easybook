@@ -17,19 +17,19 @@ Este projeto de front-end contempla o desenvolvimento completo da camada visual 
 #### > *Wireframe da tela de login da aplicação.*
 ![Tela login](./img/wireframe-login.jpeg)  
 
-#### > *Wireframe da tela de Cadastro da aplicação.*
+#### > *Wireframe da tela de cadastro da aplicação.*
 ![Tela home](./img/wireframe-cadastro.jpeg) 
 
-#### > *Wireframe da tela inicial do Profissional da aplicação.*
-![Tela home](./img/wireframe-home.jpeg) 
+#### > *Wireframe da tela inicial do profissional da aplicação.*
+![Tela home](./img/wireframe-profissional.jpeg) 
 
-#### > *Wireframe da tela inicial do Cliente da aplicação.*
+#### > *Wireframe da tela inicial do cliente da aplicação.*
 ![Tela home](./img/wireframe-cliente.jpeg)
 
 #### > *Wireframe da tela de edição de agenda da aplicação.*
 ![Tela agenda](./img/wireframe-agenda.jpeg)   
 
-#### > *Wireframe da tela de Editar Perfil da aplicação.*
+#### > *Wireframe da tela de editar perfil da aplicação.*
 ![Tela home](./img/wireframe-perfil.jpeg)  
 
 

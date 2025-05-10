@@ -112,7 +112,55 @@ Retorna 201 Created.
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
+Para garantir a integridade, confidencialidade e disponibilidade dos dados e operações no EasyBook, adotamos as seguintes práticas de segurança:
+
+### Comunicação Segura (TLS/HTTPS)
+- **HTTPS obrigatório**: Todas as requisições entre cliente e servidor devem ser feitas sobre HTTPS, com certificado válido, para proteger contra interceptação e MITM.  
+- **HSTS (HTTP Strict Transport Security)**: Configurar o cabeçalho `Strict-Transport-Security` para forçar navegadores a utilizarem somente conexões seguras.
+
+### Autenticação e Gerenciamento de Senhas
+- **Hash de senhas**: Armazenar senhas usando algoritmos de hashing robustos (bcrypt ou Argon2), com salt único por usuário.  
+- **Política de senha forte**: Validar, no frontend, requisitos mínimos de complexidade (tamanho, números, caracteres especiais) antes de enviar ao servidor.  
+- **Limite de tentativas**: Bloquear temporariamente ou usar CAPTCHA após múltiplas tentativas de login falhas para prevenir força bruta.
+
+### Tokens JWT e Controle de Sessão
+- **Expiração curta**: Definir `exp` reduzido para o JWT; usar refresh tokens em cookies `HttpOnly` quando necessário.  
+- **Armazenamento seguro**: Guardar tokens de acesso em cookies `Secure` e `HttpOnly`, não em `localStorage`.  
+- **Revogação de tokens**: Manter lista de tokens revogados ou versionamento para possibilitar logout remoto e invalidação de sessões.
+
+### Autorização e Escopo de Acesso
+- **Verificação de escopos**: Cada endpoint deve validar não apenas a autenticidade do token, mas também as permissões (cliente vs. profissional).  
+- **Menor privilégio**: Conceder apenas as permissões estritamente necessárias a cada tipo de usuário.
+
+### Validação e Sanitização de Entrada
+- **Validação dupla**: Validar no frontend (UX) e revalidar no backend (segurança) todos os dados recebidos.  
+- **Proteção contra Injection**: Usar ORM ou consultas parametrizadas em todas as operações de banco para prevenir SQL/NoSQL injection.  
+- **Sanitização de HTML**: Filtrar ou escapar tags em campos de texto livre para evitar XSS.
+
+### Proteções Contra CSRF e XSS
+- **CSRF tokens**: Exigir token anti-CSRF em requisições que alterem estado (POST, PUT, DELETE).  
+- **Content Security Policy (CSP)**: Definir política de fontes e scripts confiáveis para mitigar XSS.  
+- **Escapamento de dados**: Sempre escapar valores dinâmicos ao renderizar no DOM.
+
+### Cabeçalhos de Segurança HTTP
+- **X-Frame-Options**: `DENY` ou `SAMEORIGIN` para evitar clickjacking.  
+- **X-Content-Type-Options**: `nosniff` para impedir detecção incorreta de tipos de conteúdo.  
+- **Referrer-Policy**: Controlar informações de referer enviadas a terceiros.  
+- **Permissions-Policy**: Desabilitar APIs de navegador não utilizadas (geolocalização, câmera etc.).
+
+### Controle de CORS
+- **Origem restrita**: Permitir apenas o domínio do frontend em `Access-Control-Allow-Origin`.  
+- **Métodos e headers limitados**: Especificar apenas os métodos e cabeçalhos necessários.
+
+### Monitoramento e Tratamento de Incidentes
+- **Logs centralizados**: Registrar acessos, falhas de autenticação e erros críticos em solução de logs (ELK, Loggly).  
+- **Alertas**: Configurar alertas para atividades suspeitas (múltiplas falhas de login, picos de requisições).  
+- **Plano de resposta**: Definir procedimento para investigação, contenção e notificação em caso de incidente.
+
+### Boas Práticas de Deploy
+- **Ambientes isolados**: Separar dev, homologação e produção, com configurações independentes.  
+- **Variáveis de ambiente seguras**: Armazenar segredos (chaves JWT, strings de conexão) em serviços de vault ou variáveis de ambiente do servidor.  
+- **Atualizações regulares**: Manter frameworks, bibliotecas e sistema operacional sempre atualizados para mitigar vulnerabilidades conhecidas.  
 
 ## Implantação
 

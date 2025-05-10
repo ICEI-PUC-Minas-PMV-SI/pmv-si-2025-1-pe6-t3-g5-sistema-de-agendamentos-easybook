@@ -44,6 +44,65 @@ O design da aplicação foi definido com os seguintes elementos visuais:
 
 [Diagrama ou descrição do fluxo de dados na aplicação.]
 
+### Cadastro de Usuário (Cliente ou Servidor)
+- Frontend (HTML/JS):
+
+Usuário preenche o formulário (nome, e-mail, senha etc.)
+
+Ao clicar em Cadastrar-se, o frontend faz uma requisição POST /api/cadastro.
+
+- Backend (ASP.NET Core):
+
+Recebe os dados no endpoint.
+
+Valida os campos.
+
+Criptografa a senha.
+
+Insere os dados no banco de dados.
+
+Retorna resposta 201 Created ou 400 BadRequest se houver erro.
+### Login do Usuário
+- Frontend (HTML/JS):
+
+Usuário insere e-mail e senha.
+
+Ao clicar em Fazer Login, faz POST para /api/login.
+
+- Backend:
+
+Busca o usuário pelo e-mail.
+
+Compara a senha fornecida com a senha criptografada no banco.
+
+Se válido:
+
+Gera um JWT token.
+
+Retorna token e dados básicos (id, nome, tipo).
+
+Se inválido:
+
+Retorna 401 Unauthorized.
+### Agendamento de Serviços
+- Frontend:
+
+Usuário logado acessa a tela de agendamento.
+
+Escolhe serviço, data e horário.
+
+Clica em Agendar → POST para /api/agendamentos com token JWT no header.
+
+- Backend:
+
+Valida o token JWT.
+
+Verifica disponibilidade do serviço.
+
+Se disponível, insere no banco.
+
+Retorna 201 Created.
+  
 ## Tecnologias Utilizadas
 - Git e GitHub (controle de versão)
 - Figma (para design e prototipagem)

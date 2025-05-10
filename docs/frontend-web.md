@@ -14,23 +14,30 @@ Este projeto de front-end contempla o desenvolvimento completo da camada visual 
 
 #### [Easybook no Figma](https://www.figma.com/design/juU3fxkgVJXXccndVplkDl/EasyBook--Copy-?node-id=2001-3&m=draw)
 
-#### > *Wireframe da tela inicial da aplicação.*
-![Tela home](./img/wireframe-home.jpeg)  
-
-#### > *Wireframe da tela de edição de agenda da aplicação.*
-![Tela agenda](./img/wireframe-agenda.jpeg)  
-
 #### > *Wireframe da tela de login da aplicação.*
 ![Tela login](./img/wireframe-login.jpeg)  
 
+#### > *Wireframe da tela de Cadastro da aplicação.*
+![Tela home](./img/wireframe-cadastro.jpeg) 
+
+#### > *Wireframe da tela inicial do Profissional da aplicação.*
+![Tela home](./img/wireframe-home.jpeg) 
+
+#### > *Wireframe da tela inicial do Cliente da aplicação.*
+![Tela home](./img/wireframe-cliente.jpeg)
+
+#### > *Wireframe da tela de edição de agenda da aplicação.*
+![Tela agenda](./img/wireframe-agenda.jpeg)   
+
+#### > *Wireframe da tela de Editar Perfil da aplicação.*
+![Tela home](./img/wireframe-perfil.jpeg)  
 
 
 ### Design Visual
 O design da aplicação foi definido com os seguintes elementos visuais:
 
-- **Paleta de cores:** `#8B5CF6` (primária), `#abcdef` (secundária), branco e cinza neutro.
-- **Tipografia:** Fonte principal: *Inter*, secundária: *Roboto*.
-- **Ícones:** Usados via biblioteca *Phosphor Icons*.
+- **Paleta de cores:** Roxo `#8B5CF6` (primária), Branco `#F3F4F6`, Cinza `#6B7280`, Vermelho `#EF4444` e Verde `10B981`. 
+- **Tipografia:** Fonte principal: *Inter*, secundária: *Arial*.
 - **Estilo:** Minimalista, com foco em clareza e hierarquia visual.
 
 ## Fluxo de Dados

@@ -108,7 +108,11 @@ Retorna 201 Created.
 - Figma (para design e prototipagem)
 - Radix (para paleta de cores)
 - Visual Studio Code
+- IntelliJ
 - JavaScript, HTML, CSS
+- Java, Spring Boot
+- MySQL
+- Insomnia
 
 ## Considerações de Segurança
 

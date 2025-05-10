@@ -42,9 +42,8 @@ O design da aplicação foi definido com os seguintes elementos visuais:
 
 ## Fluxo de Dados
 
-[Diagrama ou descrição do fluxo de dados na aplicação.]
-
 ### Cadastro de Usuário (Cliente ou Servidor)
+
 - Frontend (HTML/JS):
 
 Usuário preenche o formulário (nome, e-mail, senha etc.)
@@ -63,6 +62,7 @@ Insere os dados no banco de dados.
 
 Retorna resposta 201 Created ou 400 BadRequest se houver erro.
 ### Login do Usuário
+
 - Frontend (HTML/JS):
 
 Usuário insere e-mail e senha.

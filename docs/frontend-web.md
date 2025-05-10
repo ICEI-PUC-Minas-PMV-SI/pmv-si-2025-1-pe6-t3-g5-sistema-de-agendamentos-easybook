@@ -36,7 +36,7 @@ Este projeto de front-end contempla o desenvolvimento completo da camada visual 
 ### Design Visual
 O design da aplicação foi definido com os seguintes elementos visuais:
 
-- **Paleta de cores:** Roxo `#8B5CF6` (primária), Branco `#F3F4F6`, Cinza `#6B7280`, Vermelho `#EF4444` e Verde `10B981`. 
+- **Paleta de cores:** Roxo `#8B5CF6` (primária), Branco `#F3F4F6`, Cinza `#6B7280`, Vermelho `#EF4444` e Verde `#10B981` ![#ff0000](https://via.placeholder.com/15/ff0000/000000?text=+). 
 - **Tipografia:** Fonte principal: *Inter*, secundária: *Arial*.
 - **Estilo:** Minimalista, com foco em clareza e hierarquia visual.
 

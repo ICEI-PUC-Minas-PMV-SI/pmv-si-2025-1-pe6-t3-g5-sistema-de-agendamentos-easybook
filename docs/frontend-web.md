@@ -208,7 +208,7 @@ c) Banco de Dados (MySQL)
 
 Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas descritas abaixo, com o objetivo de validar tanto as interações corretas com a API quanto a lógica interna da aplicação web.
 
-#### 1) criar conta
+### 1) criar conta
 
 #### a) clicar em "Cadastre-se" sem ter preenchido um ou mais campos.
 
@@ -232,7 +232,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 2) fazer o login
+### 2) fazer o login
 
 #### a) clicar em "Fazer Login" sem preencher as credenciais
 
@@ -258,7 +258,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 3) alterar a foto de perfil e o nome de exibição
+### 3) alterar a foto de perfil e o nome de exibição
 
 #### a) o usuário clica em um dos botões de edição (lápis ao lado do nome ou "editar perfil" no menu drop-down), preenche as novas informações e faz o envio do formulário.
 
@@ -266,7 +266,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 4) disponibilizar horário
+### 4) disponibilizar horário
 
 #### a) o usuário, na condição de prestador de serviços, navega até a aba "editar agenda", seleciona um dia no calendário e clica no botão de adição (+).
 
@@ -274,9 +274,9 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 5) editar agenda de horários (como profissional)
+### 5) editar agenda de horários (como profissional)
 
-#### 5.1) alterar um horário individualmente e salvar
+### 5.1) alterar um horário individualmente e salvar
 
 #### a) na aba "editar agenda", o profissional seleciona uma data para a qual existe um horário criado e altera o valor da hora. Após a alteração, clica em "salvar" (ícone de disquete).
 
@@ -290,7 +290,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 5.2) alterar múltiplos horários e salvar apenas uma parte
+### 5.2) alterar múltiplos horários e salvar apenas uma parte
 
 #### a) na aba "editar agenda", o profissional seleciona uma data para a qual existem no mínimo três horários criados e altera o valor da hora de no mínimo dois deles, garantindo que ao menos um siga inalterado. Após a alteração, clica no botão "salvar" (ícone de disquete) de cada um dos horários alterados.
 
@@ -304,7 +304,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 5.3) alterar múltiplos horários e salvar todos
+### 5.3) alterar múltiplos horários e salvar todos
 
 #### a) na aba "editar agenda", o profissional seleciona uma data para a qual existem no mínimo três horários criados e altera todos eles. Após a alteração, clica no botão "salvar" (ícone de disquete) de cada um dos horários alterados.
 
@@ -318,7 +318,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 6) agendar horário (como cliente)
+### 6) agendar horário (como cliente)
 
 #### a) acessando o perfil de um(a) profissional ([...]/visualizar-perfil.html?usuario={id}), o(a) cliente verifica a lista de horários disponíveis para a data desejada, clica neste horário e confirma o agendamento na caixa de confirmação exibida.
 
@@ -326,7 +326,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 7) conferir horários agendados (como cliente)
+### 7) conferir horários agendados (como cliente)
 
 #### a) o(a) usuário(a), tendo agendamentos para datas passadas, para a data atual e para datas posteriores, acessa a página "perfil comum".  
 
@@ -334,7 +334,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 8) conferir horários agendados (como prestador)
+### 8) conferir horários agendados (como prestador)
 
 #### a) o(a) usuário(a), tendo agendamentos para datas passadas, para a data atual e para datas posteriores, acessa a página "perfil profissional".  
 
@@ -342,7 +342,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 9) cancelar horário agendado (como cliente)
+### 9) cancelar horário agendado (como cliente)
 
 #### a) o(a) usuário(a) acessa a página "perfil comum", clica em um dos botões "cancelar" no card de um horário e confirma a exclusão na caixa de confirmação exibida.  
 
@@ -350,7 +350,7 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-#### 10) cancelar horário agendado (como profissional)
+### 10) cancelar horário agendado (como profissional)
 
 #### a) o(a) usuário(a) acessa a página "perfil profissional", clica em um dos botões "cancelar" no card de um horário e confirma a exclusão na caixa de confirmação exibida..  
 

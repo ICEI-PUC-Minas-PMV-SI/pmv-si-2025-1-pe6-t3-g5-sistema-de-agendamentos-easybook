@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EasyBook</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>EasyBook</h1>
+    <!-- Opções de Cadastro e Login	 -->
+    <div class="tabs">
+      <button onclick="showScreen('login')" id="btnLogin" class="active">Login</button>
+      <button onclick="showScreen('cadastro')" id="btnCliente">Cadastro</button>
+    </div>
+    <!-- Cadastro Cliente  -->
+    <div id="cadastro" class="screen">
+      <h2>Cadastro</h2>
+      <form autocomplete="off" id="cadastroForm">
+        <input type="text" id="cadastroUsuario" autocomplete="new-username" placeholder="Digite seu nome de usuário" required>
+        <input type="text" id="cadastroNome" autocomplete="off" placeholder="Digite seu nome completo" required>
+        <input type="password" id="cadastroSenha" autocomplete="new-password" placeholder="Digite sua senha" required>
+        <input type="password" id="confirmarSenha" autocomplete="off" placeholder="Confirme sua senha" required>
+        <button type="submit">Cadastrar-se</button>
+      </form>
+      
+      <p id="cadastro-error" style="color: var(--danger, red); display: none; margin-top: 10px;">Falha no cadastro. Tente novamente mais tarde.</p>
+      <p class="link">Já possui conta? <a href="#" onclick="showScreen('login')">Acesse aqui</a></p>
+    </div>
+    <!-- Login -->
+    <div id="login" class="screen active">
+      <h2>Entrar</h2>
+      <form id="loginForm">
+        <input type="text" id="loginUsuario" placeholder="Usuário" required>
+        <input type="password" id="loginSenha" placeholder="Senha" required>
+        <button type="submit">Fazer Login</button>
+      </form>
+      <p class="link">Não tem uma conta? <a href="#" onclick="showScreen('cadastro')">Cadastre-se!</a></p>
+      <p id="login-error" style="color: var(--danger, red); display: none; margin-top: 10px;">Usuário ou senha inválidos.</p>
+    </div>
+  </div>
+  <!-- Transição de Tela e Login -->
+  <script src="auth.js"></script>
+  <script src="index.js"></script>    
+</body>
+</html>

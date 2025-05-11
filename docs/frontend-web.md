@@ -212,79 +212,121 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 #### a) clicar em "Cadastre-se" sem ter preenchido um ou mais campos.
 
-Resultado esperado: a aplicação exibe um alerta no primeiro campo vazio.
+**Resultado esperado**: a aplicação exibe um alerta no primeiro campo vazio.
 
-Resultado: conforme o esperado.
+**Resultado**: conforme o esperado.
 
 #### b) clicar em "Cadastre-se" com os campos preenchidos, porém com valores diferentes para "senha" e "confirmar senha".
 
-Resultado esperado: a aplicação não registra o usuário e exibe um alerta de que as senhas não são iguais.
+**Resultado esperado**: a aplicação não registra o usuário e exibe um alerta de que as senhas não são iguais.
 
-Resultado obtido: a aplicação falhou em executar a verificação, cadastrando o usuário com a senha fornecida no primeiro campo (ignorando o valor de "confirmar senha").
+**Resultado obtido**: a aplicação falhou em executar a verificação, cadastrando o usuário com a senha fornecida no primeiro campo (ignorando o valor de "confirmar senha").
 
-Correção: foi incluído um trecho de código para realizar a conferência antes do envio, e, em caso de diferença, emitir uma notificação (As senhas não coincidem.) e bloquear o envio.
+**Correção**: foi incluído um trecho de código para realizar a conferência antes do envio, e, em caso de diferença, emitir uma notificação (As senhas não coincidem.) e bloquear o envio.
 
-Resultado após a correção: conforme o esperado.
+**Resultado após a correção**: conforme o esperado.
 
 #### c) clicar em "Cadastre-se" com todos os campos preenchidos, sem omissões ou valores inválidos
 
-Resultado esperado: a aplicação cadastra o novo usuário, realiza o login na nova conta e redireciona para a página inicial.
+**Resultado esperado**: a aplicação cadastra o novo usuário, realiza o login na nova conta e redireciona para a página inicial.
 
-Resultado obtido: conforme o esperado.
+**Resultado obtido**: conforme o esperado.
 
 #### 2) fazer o login
 
 #### a) clicar em "Fazer Login" sem preencher as credenciais
 
-Resultado esperado: a aplicação não envia os dados ao servidor e exibe um alerta no primeiro campo vazio (usuário ou senha).
+**Resultado esperado**: a aplicação não envia os dados ao servidor e exibe um alerta no primeiro campo vazio (usuário ou senha).
 
-Resultado obtido: conforme o esperado.
+**Resultado obtido**: conforme o esperado.
 
 #### b) clicar em "Fazer Login" com os dados preenchidos, porém informando um usuário inexistente
 
-Resultado esperado: a aplicação front-end recebe do back-end a notificação de falha no login e exibe um alerta (Usuário ou senha inválidos.) de modo a não revelar se o erro foi referente ao nome de usuário ou à senha.
+**Resultado esperado**: a aplicação front-end recebe do back-end a notificação de falha no login e exibe um alerta (Usuário ou senha inválidos.) de modo a não revelar se o erro foi referente ao nome de usuário ou à senha.
 
-Resultado obtido: conforme o esperado.
+**Resultado obtido**: conforme o esperado.
 
 #### c) clicar em "Fazer Login" com um nome de usuário existente, porém a senha errada
 
-Resultado esperado: a aplicação front-end recebe do back-end a notificação de falha no login e exibe um alerta (Usuário ou senha inválidos.) de modo a não revelar se o erro foi referente ao nome de usuário ou à senha.
+**Resultado esperado**: a aplicação front-end recebe do back-end a notificação de falha no login e exibe um alerta (Usuário ou senha inválidos.) de modo a não revelar se o erro foi referente ao nome de usuário ou à senha.
 
-Resultado obtido: conforme o esperado.
+**Resultado obtido**: conforme o esperado.
 
 #### d) clicar em "Fazer Login" com ambas as credenciais válidas
 
-Resultado esperado: a aplicação realiza o login, registra devidamente o token de acesso e redireciona o usuário à página inicial.
+**Resultado esperado**: a aplicação realiza o login, registra devidamente o token de acesso e redireciona o usuário à página inicial.
 
-Resultado obtido: conforme o esperado.
+**Resultado obtido**: conforme o esperado.
 
 #### 3) alterar a foto de perfil e o nome de exibição
 
-Resultado esperado: o usuário é redirecionado para a página inicial, já com a nova foto e/ou nome.
+#### a) o usuário clica em um dos botões de edição (lápis ao lado do nome ou "editar perfil" no menu drop-down), preenche as novas informações e faz o envio do formulário.
 
-Resultado obtido: conforme o esperado.
+**Resultado esperado**: o usuário é redirecionado para a página inicial, já com a foto e/ou nome atualizados.
+
+**Resultado obtido**: conforme o esperado.
 
 #### 4) disponibilizar horário
 
-5) agendar horário
+#### a) o usuário, na condição de prestador de serviços, navega até a aba "editar agenda", seleciona um dia no calendário e clica no botão de adição (+).
 
-6) conferir horários agendados (como cliente)
+**Resultado esperado**: um novo horário é criado na data selecionada e salvo automaticamente no banco de dados. Por padrão o novo horário é às 09:00, podendo ser editado na mesma tela em que foi criado.
 
-7) conferir horários agendados (como prestador)
+**Resultado obtido**: conforme o esperado.
 
-8) cancelar horário agendado (como cliente)
+#### 5) editar agenda de horários (como profissional)
 
-9) cancelar horário agendado (como profissional)
+#### 5.1) alterar um horário individualmente e salvar
 
-10) editar agenda de horários (como profissional)
+#### a) na aba "editar agenda", o profissional seleciona uma data para a qual existe um horário criado e altera o valor da hora. Após a alteração, clica em "salvar" (ícone de disquete).
 
-10.1) alterar um horário individualmente e salvar
+**Resultado esperado**: o horário é atualizado no back-end, sendo exibida uma mensagem de sucesso referente apenas a um horário.
 
-10.2) alterar múltiplos horários e salvar apenas uma parte
+**Resultado obtido**: conforme o esperado.
 
-10.3) alterar múltiplos horários e salvar todos
+#### b) na aba "editar agenda", o profissional seleciona uma data para a qual existe um horário criado e altera o valor da hora. Após a alteração, clica em "salvar horários do dia".
 
+**Resultado esperado**: o horário é atualizado no back-end, sendo exibida uma mensagem de sucesso referente apenas aos horários do dia de forma geral.
 
+**Resultado obtido**: conforme o esperado.
+
+#### 5.2) alterar múltiplos horários e salvar apenas uma parte
+
+#### a) na aba "editar agenda", o profissional seleciona uma data para a qual existem no mínimo três horários criados e altera o valor da hora de no mínimo dois deles, garantindo que ao menos um siga inalterado. Após a alteração, clica no botão "salvar" (ícone de disquete) de cada um dos horários alterados.
+
+**Resultado esperado**: os horários são atualizados no back-end, sendo exibida uma mensagem de sucesso referente a cada salvamento individual.
+
+**Resultado obtido**: conforme o esperado.
+
+#### b) na aba "editar agenda", o profissional seleciona uma data para a qual existem pelo menos três horários criados e altera o valor da hora de no mínimo dois deles, garantindo que ao menos um siga inalterado. Após a alteração, clica em "salvar horários do dia".
+
+**Resultado esperado**: os horários são atualizados no back-end, sendo exibida uma mensagem de sucesso referente apenas aos horários do dia de forma geral.
+
+**Resultado obtido**: conforme o esperado.
+
+#### 5.3) alterar múltiplos horários e salvar todos
+
+#### a) na aba "editar agenda", o profissional seleciona uma data para a qual existem no mínimo três horários criados e altera todos eles. Após a alteração, clica no botão "salvar" (ícone de disquete) de cada um dos horários alterados.
+
+**Resultado esperado**: todos os horários são atualizados no back-end, sendo exibida uma mensagem de sucesso referente a cada salvamento individual.
+
+**Resultado obtido**: conforme o esperado.
+
+#### a) na aba "editar agenda", o profissional seleciona uma data para a qual existem pelo menos três horários criados e altera o valor da hora de todos eles. Após a alteração, clica em "salvar horários do dia".
+
+**Resultado esperado**: todos horários são atualizados no back-end, sendo exibida uma mensagem de sucesso referente apenas aos horários do dia de forma geral.
+
+**Resultado obtido**: conforme o esperado.
+
+6) agendar horário (como cliente)
+
+7) conferir horários agendados (como cliente)
+
+8) conferir horários agendados (como prestador)
+
+9) cancelar horário agendado (como cliente)
+
+10) cancelar horário agendado (como profissional)
 
 # Referências
 

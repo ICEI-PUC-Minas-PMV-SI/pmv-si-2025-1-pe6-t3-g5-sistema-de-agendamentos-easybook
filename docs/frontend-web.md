@@ -46,11 +46,11 @@ O design da aplicação foi definido com os seguintes elementos visuais:
 
 - Frontend (HTML/JS):
 
-Usuário preenche o formulário (nome, e-mail, senha etc.)
+Usuário preenche o formulário (login, nome, senha, confirmação de senha)
 
 Ao clicar em Cadastrar-se, o frontend faz uma requisição POST /api/cadastro.
 
-- Backend (ASP.NET Core):
+- Backend (Java / Spring Boot):
 
 Recebe os dados no endpoint.
 
@@ -204,13 +204,87 @@ c) Banco de Dados (MySQL)
 
 ## Testes
 
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
+### Testes de interface
 
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
+Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas descritas abaixo, com o objetivo de validar tanto as interações corretas com a API quanto a lógica interna da aplicação web.
+
+#### 1) criar conta
+
+#### a) clicar em "Cadastre-se" sem ter preenchido um ou mais campos.
+
+Resultado esperado: a aplicação exibe um alerta no primeiro campo vazio.
+
+Resultado: conforme o esperado.
+
+#### b) clicar em "Cadastre-se" com os campos preenchidos, porém com valores diferentes para "senha" e "confirmar senha".
+
+Resultado esperado: a aplicação não registra o usuário e exibe um alerta de que as senhas não são iguais.
+
+Resultado obtido: a aplicação falhou em executar a verificação, cadastrando o usuário com a senha fornecida no primeiro campo (ignorando o valor de "confirmar senha").
+
+Correção: foi incluído um trecho de código para realizar a conferência antes do envio, e, em caso de diferença, emitir uma notificação (As senhas não coincidem.) e bloquear o envio.
+
+Resultado após a correção: conforme o esperado.
+
+#### c) clicar em "Cadastre-se" com todos os campos preenchidos, sem omissões ou valores inválidos
+
+Resultado esperado: a aplicação cadastra o novo usuário, realiza o login na nova conta e redireciona para a página inicial.
+
+Resultado obtido: conforme o esperado.
+
+#### 2) fazer o login
+
+#### a) clicar em "Fazer Login" sem preencher as credenciais
+
+Resultado esperado: a aplicação não envia os dados ao servidor e exibe um alerta no primeiro campo vazio (usuário ou senha).
+
+Resultado obtido: conforme o esperado.
+
+#### b) clicar em "Fazer Login" com os dados preenchidos, porém informando um usuário inexistente
+
+Resultado esperado: a aplicação front-end recebe do back-end a notificação de falha no login e exibe um alerta (Usuário ou senha inválidos.) de modo a não revelar se o erro foi referente ao nome de usuário ou à senha.
+
+Resultado obtido: conforme o esperado.
+
+#### c) clicar em "Fazer Login" com um nome de usuário existente, porém a senha errada
+
+Resultado esperado: a aplicação front-end recebe do back-end a notificação de falha no login e exibe um alerta (Usuário ou senha inválidos.) de modo a não revelar se o erro foi referente ao nome de usuário ou à senha.
+
+Resultado obtido: conforme o esperado.
+
+#### d) clicar em "Fazer Login" com ambas as credenciais válidas
+
+Resultado esperado: a aplicação realiza o login, registra devidamente o token de acesso e redireciona o usuário à página inicial.
+
+Resultado obtido: conforme o esperado.
+
+#### 3) alterar a foto de perfil e o nome de exibição
+
+Resultado esperado: o usuário é redirecionado para a página inicial, já com a nova foto e/ou nome.
+
+Resultado obtido: conforme o esperado.
+
+#### 4) disponibilizar horário
+
+5) agendar horário
+
+6) conferir horários agendados (como cliente)
+
+7) conferir horários agendados (como prestador)
+
+8) cancelar horário agendado (como cliente)
+
+9) cancelar horário agendado (como profissional)
+
+10) editar agenda de horários (como profissional)
+
+10.1) alterar um horário individualmente e salvar
+
+10.2) alterar múltiplos horários e salvar apenas uma parte
+
+10.3) alterar múltiplos horários e salvar todos
+
+
 
 # Referências
 

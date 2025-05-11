@@ -1,5 +1,6 @@
 package puc.eixo6.api.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -27,6 +28,7 @@ public class HorarioController {
     @Autowired
     private TokenService tokenService;
 
+    @SecurityRequirement(name = "bearer-key")
     @PostMapping
     @Transactional
     public ResponseEntity<DadosDetalhamentoHorario> cadastrar(@RequestBody @Valid DadosCadastroHorario dados, UriComponentsBuilder uriBuilder) {
@@ -38,6 +40,7 @@ public class HorarioController {
         return ResponseEntity.created(uri).body(new DadosDetalhamentoHorario(horario));
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @GetMapping
     public ResponseEntity<Page<DadosListagemHorario>> listar(@PageableDefault(sort = {"data", "horarioInicial"}) Pageable paginacao) {
 
@@ -47,6 +50,7 @@ public class HorarioController {
         return ResponseEntity.ok(page);
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @GetMapping("/prestador/{id}/{data}")
     public ResponseEntity<Page<DadosListagemHorario>> listarPorPrestadorEData(@PageableDefault(sort = {"data", "horarioInicial"}, size = 50) Pageable paginacao,
                                                                               @PathVariable Long id,
@@ -65,6 +69,7 @@ public class HorarioController {
         return ResponseEntity.ok(page);
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @GetMapping("/prestador/agendado/{id}/{data}")
     public ResponseEntity<Page<DadosListagemHorario>> listarPorPrestadorEDataAgendada(@PageableDefault(sort = {"data", "horarioInicial"}, size = 50) Pageable paginacao,
                                                                                         @PathVariable Long id,
@@ -74,6 +79,7 @@ public class HorarioController {
         return ResponseEntity.ok(page);
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @GetMapping("/proximos/cliente/{id}")
     public ResponseEntity<Page<DadosListagemHorarioCliente>> listarAgendamentosFuturosPorCliente(@PageableDefault(sort = {"data", "horarioInicial"}, size = 30) Pageable paginacao,
                                                                             @PathVariable Long id) {
@@ -84,6 +90,7 @@ public class HorarioController {
         return ResponseEntity.ok(page);
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @GetMapping("/cliente/{id}/{data}")
     public ResponseEntity<Page<DadosListagemHorario>> listarPorClienteEData(@PageableDefault(sort = {"data", "horarioInicial"}) Pageable paginacao,
                                                                             @PathVariable Long id,
@@ -105,6 +112,7 @@ public class HorarioController {
         return ResponseEntity.ok(new DadosDetalhamentoHorario(horario));
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @PutMapping
     @Transactional
     public ResponseEntity<DadosDetalhamentoHorario> atualizar(@RequestBody @Valid DadosAtualizacaoHorario dados) {
@@ -121,8 +129,8 @@ public class HorarioController {
         return ResponseEntity.ok(new DadosDetalhamentoHorario(horario));
     }
 
-    /*MÉTODOS PARA AGENDAMENTO (INICIO)*/
 
+    @SecurityRequirement(name = "bearer-key")
     @PutMapping("/agendar")
     @Transactional
     public ResponseEntity<DadosDetalhamentoHorario> agendar(@RequestBody @Valid DadosAgendamentoHorario dados) {
@@ -148,6 +156,7 @@ public class HorarioController {
 
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @PutMapping("/cancelar")
     @Transactional
     public ResponseEntity<DadosDetalhamentoHorario> cancelar(@RequestBody @Valid DadosCancelamentoHorario dados) {
@@ -168,6 +177,7 @@ public class HorarioController {
     }
     /*MÉTODOS PARA AGENDAMENTO (FIM)*/
 
+    @SecurityRequirement(name = "bearer-key")
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity<Void> deletar(@PathVariable Long id) {

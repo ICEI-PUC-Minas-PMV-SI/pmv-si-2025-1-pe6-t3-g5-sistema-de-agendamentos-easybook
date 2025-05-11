@@ -1,5 +1,6 @@
 package puc.eixo6.api.controller;
 
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -26,11 +27,13 @@ import java.io.IOException;
 @RequestMapping("/usuarios")
 public class UsuarioController {
 
+    @SecurityRequirement(name = "bearer-key")
     @GetMapping
     public Page<DadosListagemUsuario> listar(Pageable paginacao) {
         return repository.findAllByDeletadoFalse(paginacao).map(DadosListagemUsuario::new);
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @GetMapping("/{id}")
     public ResponseEntity<DadosDetalhamentoUsuario> getUsuario(@PathVariable Long id) {
         var usuario = repository.getReferenceById(id);
@@ -42,6 +45,7 @@ public class UsuarioController {
         return ResponseEntity.ok(new DadosDetalhamentoUsuario(usuario));
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @GetMapping("/{id}/fotoPerfil")
     public ResponseEntity<byte[]> baixarFotoPerfil(@PathVariable Long id) {
         var usuario = repository.findById(id);
@@ -88,6 +92,7 @@ public class UsuarioController {
         return ResponseEntity.ok(new DadosTokenJWT(tokenJWT));
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @PutMapping
     @Transactional
     public ResponseEntity<DadosDetalhamentoUsuario> atualizar(@RequestPart("dados") @Valid DadosAtualizacaoUsuario dados,
@@ -109,6 +114,7 @@ public class UsuarioController {
         return ResponseEntity.ok(new DadosDetalhamentoUsuario(usuario));
     }
 
+    @SecurityRequirement(name = "bearer-key")
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity<Void> deletar(@PathVariable Long id) {

@@ -30,6 +30,7 @@ public class SecurityConfigurations {
                 .requestMatchers("/horarios/prestador/*/*").permitAll()
                 .requestMatchers("/horarios/prestador/disponivel/*/*").permitAll()
                 .requestMatchers("/agendar").permitAll()
+                .requestMatchers("/v3/api-docs/**", "/swagger-ui/index.html", "/swagger-ui/**").permitAll()
                 .anyRequest().authenticated()
                 .and()
                 .addFilterBefore(filtro, UsernamePasswordAuthenticationFilter.class).build();

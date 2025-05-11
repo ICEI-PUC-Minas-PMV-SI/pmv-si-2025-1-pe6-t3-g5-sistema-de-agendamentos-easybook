@@ -60,10 +60,22 @@ public class SecurityFilter extends OncePerRequestFilter {
             filterChain.doFilter(request, response);
             return;
         }
+        if (uri.matches("/v3/api-docs")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+        if (uri.matches("/swagger-ui/index.html")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+        if (uri.matches("/swagger-ui/*")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
 
-        String tokenJWT = recuperarToken(request);
+        //String tokenJWT = recuperarToken(request);
 
-        var subject = tokenService.getSubject(tokenJWT);
+        //var subject = tokenService.getSubject(tokenJWT);
 
 
 

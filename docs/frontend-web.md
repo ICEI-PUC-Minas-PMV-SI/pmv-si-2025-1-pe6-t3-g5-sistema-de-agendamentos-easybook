@@ -318,15 +318,45 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 **Resultado obtido**: conforme o esperado.
 
-6) agendar horário (como cliente)
+#### 6) agendar horário (como cliente)
 
-7) conferir horários agendados (como cliente)
+#### a) acessando o perfil de um(a) profissional ([...]/visualizar-perfil.html?usuario={id}), o(a) cliente verifica a lista de horários disponíveis para a data desejada, clica neste horário e confirma o agendamento na caixa de confirmação exibida.
 
-8) conferir horários agendados (como prestador)
+**Resultado esperado**: o horário é agendado e imediatamente deixa de aparecer na lista de horário disponíveis.
 
-9) cancelar horário agendado (como cliente)
+**Resultado obtido**: conforme o esperado.
 
-10) cancelar horário agendado (como profissional)
+#### 7) conferir horários agendados (como cliente)
+
+#### a) o(a) usuário(a), tendo agendamentos para datas passadas, para a data atual e para datas posteriores, acessa a página "perfil comum".  
+
+**Resultado esperado**: para cada horário existente na data atual ou em datas futuras, é exibido um card com as informações "nome do(a) profissional", "data" e "hora", além de um botão "cancelar". Horários de datas passadas não são exibidos.
+
+**Resultado obtido**: conforme o esperado.
+
+#### 8) conferir horários agendados (como prestador)
+
+#### a) o(a) usuário(a), tendo agendamentos para datas passadas, para a data atual e para datas posteriores, acessa a página "perfil profissional".  
+
+**Resultado esperado**: para cada horário existente na data atual ou em datas futuras, é exibido um card com as informações "nome do(a) profissional", "data" e "hora", além de um botão "cancelar". Horários de datas passadas não são exibidos.
+
+**Resultado obtido**: conforme o esperado.
+
+#### 9) cancelar horário agendado (como cliente)
+
+#### a) o(a) usuário(a) acessa a página "perfil comum", clica em um dos botões "cancelar" no card de um horário e confirma a exclusão na caixa de confirmação exibida.  
+
+**Resultado esperado**: o agendamento é cancelado e imediatamente removido da lista de agendamentos. O agendamento volta imediatamente a aparecer como disponível no perfil do(a) profissional que o disponibilizou.
+
+**Resultado obtido**: conforme o esperado.
+
+#### 10) cancelar horário agendado (como profissional)
+
+#### a) o(a) usuário(a) acessa a página "perfil profissional", clica em um dos botões "cancelar" no card de um horário e confirma a exclusão na caixa de confirmação exibida..  
+
+**Resultado esperado**: o agendamento é cancelado e imediatamente removido da lista de agendamentos do respectivo cliente. O agendamento volta imediatamente a aparecer como disponível no perfil do(a) profissional que o disponibilizou.
+
+**Resultado obtido**: conforme o esperado.
 
 # Referências
 

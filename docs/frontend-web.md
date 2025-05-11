@@ -168,13 +168,39 @@ Para garantir a integridade, confidencialidade e disponibilidade dos dados e ope
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
 
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
+A implantação do EasyBook foi realizada na Amazon Web Services (AWS), utilizando serviços escaláveis e gerenciados para garantir segurança, alta disponibilidade e desempenho. A aplicação foi dividida em duas camadas principais: frontend Web (estático) e API backend (Java Spring Boot), com integração ao banco de dados MySQL.
+
+### 1. Arquitetura de Implantação
+- Frontend Web: Hospedado no Amazon S3 com distribuição global via Amazon CloudFront.
+- Backend (Spring Boot): Implantado em uma instância EC2 (t2.medium) executando Amazon Linux 2.
+- Banco de Dados: Amazon RDS (MySQL) com backups automáticos habilitados.
+- Gerenciamento de Domínio e HTTPS: Utilizado Amazon Route 53 para DNS e AWS Certificate Manager (ACM) para certificados TLS.
+- Segurança: Controle de acesso via Security Groups e políticas de IAM, com as portas 80/443 abertas para acesso externo e 3306 apenas para a aplicação.
+
+### 2. Etapas do Deploy
+a) Front-end Web
+- Gerado build de produção com npm run build.
+- Arquivos estáticos enviados para um bucket S3 configurado como site estático.
+- Distribuição via CloudFront com certificado SSL do ACM.
+- Configurado o domínio personalizado no Route 53, apontando para o CloudFront.
+
+b) API Backend
+- Empacotado o projeto Spring Boot em um .jar via Maven/Gradle.
+- Instância EC2 provisionada com Java 23 e configurada via SSH.
+- Aplicação iniciada como serviço usando systemd ou nohup.
+- Variáveis sensíveis como tokens e senhas foram inseridas via .env ou como variáveis do sistema.
+
+c) Banco de Dados (MySQL)
+- Instância RDS criada com backups, logs e criptografia ativados.
+- Configurada VPC e Security Group permitindo acesso apenas da EC2.
+- Rodados scripts de criação do schema e tabelas iniciais.
+
+### 3. Boas Práticas Adotadas
+- Ambientes isolados: Desenvolvimento, homologação e produção em ambientes separados.
+- Backups automáticos: Ativados no RDS com retenção mínima de 7 dias.
+- Deploy seguro: Acesso SSH restrito por IP e chave, uso de HTTPS obrigatório com redirecionamento 301.
+- Escalabilidade: EC2 com possibilidade de auto scaling futuro; CloudFront garante alta performance no front-end.
 
 ## Testes
 

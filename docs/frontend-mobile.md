@@ -1,17 +1,44 @@
 # Front-end Móvel
 
-[Inclua uma breve descrição do projeto e seus objetivos.]
+O EasyBook é uma plataforma de agendamento desenvolvida para profissionais do setor de beleza e autocuidado, como cabeleireiros e esteticistas. Esta etapa do projeto foca no desenvolvimento da interface mobile, garantindo uma experiência fluida, responsiva e otimizada para dispositivos móveis, permitindo que usuários e profissionais gerenciem agendamentos de forma prática e eficiente diretamente pelo celular.
 
 ## Projeto da Interface
-[Descreva o projeto da interface móvel da aplicação, incluindo o design visual, layout das páginas, interações do usuário e outros aspectos relevantes.]
+
+A interface mobile permite que os clientes realizem agendamentos de forma prática e acessível diretamente pelo smartphone, enquanto os profissionais podem visualizar e gerenciar seus horários de maneira rápida e intuitiva, mesmo em movimento. O front-end mobile é projetado com foco em responsividade, usabilidade em telas menores e integração eficiente com a API da aplicação.
+
+Com isso, o EasyBook oferece uma experiência otimizada para o uso mobile, aumentando a conveniência para os usuários, fortalecendo o relacionamento com os clientes e auxiliando os microempreendedores ao minimizar erros e conflitos de agenda.
+
+Este projeto de front-end contempla o desenvolvimento completo da camada visual mobile da aplicação, incluindo:
 
 ### Wireframes
 
-[Inclua os wireframes das páginas principais da interface, mostrando a disposição dos elementos na página.]
+#### [Easybook no Figma](https://www.figma.com/design/juU3fxkgVJXXccndVplkDl/EasyBook--Copy-?node-id=2001-3&m=draw)
+
+#### > *Wireframe da tela de login da aplicação.*
+![Tela login](./img/wireframe-login.jpeg)  
+
+#### > *Wireframe da tela de cadastro da aplicação.*
+![Tela home](./img/wireframe-cadastro.jpeg) 
+
+#### > *Wireframe da tela inicial do profissional da aplicação.*
+![Tela home](./img/wireframe-profissional.jpeg) 
+
+#### > *Wireframe da tela inicial do cliente da aplicação.*
+![Tela home](./img/wireframe-cliente.jpeg)
+
+#### > *Wireframe da tela de edição de agenda da aplicação.*
+![Tela agenda](./img/wireframe-agenda.jpeg)   
+
+#### > *Wireframe da tela de editar perfil da aplicação.*
+![Tela home](./img/wireframe-perfil.jpeg)  
 
 ### Design Visual
 
-[Descreva o estilo visual da interface, incluindo paleta de cores, tipografia, ícones e outros elementos gráficos.]
+O design da aplicação foi definido com os seguintes elementos visuais:
+
+- **Paleta de cores:** Roxo `#8B5CF6` (primária), Branco `#F3F4F6`, Cinza `#6B7280`, Vermelho `#EF4444` e Verde `#10B981`
+- **Tipografia:** Fonte principal: *Inter*, secundária: *Arial*.
+- **Estilo:** Minimalista, com foco em clareza e hierarquia visual.
 
 ## Fluxo de Dados
 
@@ -19,7 +46,9 @@
 
 ## Tecnologias Utilizadas
 
-[Lista das tecnologias principais que serão utilizadas no projeto.]
+- Git e GitHub (controle de versão)
+- Figma (para design e prototipagem)
+- Radix (para paleta de cores)
 
 ## Considerações de Segurança
 
@@ -47,4 +76,5 @@
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
+- [Figma – Documentação oficial](https://help.figma.com/)
+- [Radix – Documentação](https://www.radix-ui.com/blog/themes-3)

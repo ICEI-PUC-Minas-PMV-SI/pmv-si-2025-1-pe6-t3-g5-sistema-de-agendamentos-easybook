@@ -15,22 +15,22 @@ Este projeto de front-end contempla o desenvolvimento completo da camada visual 
 #### [Easybook no Figma](https://www.figma.com/design/juU3fxkgVJXXccndVplkDl/EasyBook--Copy-?node-id=2001-3&m=draw)
 
 #### > *Wireframe da tela de login da aplicação.*
-![Tela login](./img/wireframe-login-mobile.jpeg)  
+![Tela login](./img/wireframe-login-mobile.png)  
 
 #### > *Wireframe da tela de cadastro da aplicação.*
-![Tela home](./img/wireframe-cadastro-mobile.jpeg) 
+![Tela home](./img/wireframe-cadastro-mobile.png) 
 
 #### > *Wireframe da tela lista de profissionais da aplicação.*
-![Tela home](./img/wireframe-lista-mobile.jpeg)
+![Tela home](./img/wireframe-lista-mobile.png)
 
 #### > *Wireframe da tela de agenda da aplicação.*
-![Tela agenda](./img/wireframe-agenda-mobile.jpeg)   
+![Tela agenda](./img/wireframe-agenda-mobile.png)   
 
 #### > *Wireframe da tela de perfil da aplicação.*
-![Tela home](./img/wireframe-perfil-mobile.jpeg)  
+![Tela home](./img/wireframe-perfil-mobile.png)  
 
 #### > *Wireframe da tela de editar perfil da aplicação.*
-![Tela home](./img/wireframe-editar-perfil-mobile.jpeg)  
+![Tela home](./img/wireframe-editar-perfil-mobile.png)  
 
 ### Design Visual
 

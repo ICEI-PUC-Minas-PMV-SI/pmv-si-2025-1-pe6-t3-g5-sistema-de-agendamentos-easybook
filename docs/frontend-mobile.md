@@ -120,8 +120,6 @@ Retorna 201 Created.
 
 ## Considerações de Segurança
 
-[Discuta as considerações de segurança relevantes para a aplicação distribuída, como autenticação, autorização, proteção contra ataques, etc.]
-
 Para garantir a integridade, confidencialidade e disponibilidade dos dados e operações no EasyBook, adotamos as seguintes práticas de segurança:
 
 ### Comunicação Segura (TLS/HTTPS)
@@ -175,13 +173,6 @@ Para garantir a integridade, confidencialidade e disponibilidade dos dados e ope
 
 ## Implantação
 
-[Instruções para implantar a aplicação distribuída em um ambiente de produção.]
-
-1. Defina os requisitos de hardware e software necessários para implantar a aplicação em um ambiente de produção.
-2. Escolha uma plataforma de hospedagem adequada, como um provedor de nuvem ou um servidor dedicado.
-3. Configure o ambiente de implantação, incluindo a instalação de dependências e configuração de variáveis de ambiente.
-4. Faça o deploy da aplicação no ambiente escolhido, seguindo as instruções específicas da plataforma de hospedagem.
-5. Realize testes para garantir que a aplicação esteja funcionando corretamente no ambiente de produção.
 
    A implantação do EasyBook foi realizada na Amazon Web Services (AWS), utilizando serviços escaláveis e gerenciados para garantir segurança, alta disponibilidade e desempenho. A aplicação foi dividida em duas camadas principais: frontend Web (estático) e API backend (Java Spring Boot), com integração ao banco de dados MySQL.
 
@@ -217,14 +208,6 @@ c) Banco de Dados (MySQL)
 - Escalabilidade: EC2 com possibilidade de auto scaling futuro; CloudFront garante alta performance no front-end.
 
 ## Testes
-
-[Descreva a estratégia de teste, incluindo os tipos de teste a serem realizados (unitários, integração, carga, etc.) e as ferramentas a serem utilizadas.]
-
-1. Crie casos de teste para cobrir todos os requisitos funcionais e não funcionais da aplicação.
-2. Implemente testes unitários para testar unidades individuais de código, como funções e classes.
-3. Realize testes de integração para verificar a interação correta entre os componentes da aplicação.
-4. Execute testes de carga para avaliar o desempenho da aplicação sob carga significativa.
-5. Utilize ferramentas de teste adequadas, como frameworks de teste e ferramentas de automação de teste, para agilizar o processo de teste.
 
 ## Testes de interface
 

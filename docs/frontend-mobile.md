@@ -14,23 +14,23 @@ Este projeto de front-end contempla o desenvolvimento completo da camada visual 
 
 #### [Easybook no Figma](https://www.figma.com/design/juU3fxkgVJXXccndVplkDl/EasyBook--Copy-?node-id=2001-3&m=draw)
 
-#### > *Wireframe da tela de login da aplicação.*
-![Tela login](./img/wireframe-login-mobile.png)  
-
 #### > *Wireframe da tela de cadastro da aplicação.*
-![Tela home](./img/wireframe-cadastro-mobile.png) 
+![Tela home](./img/mobile-v2/01%20-%20cadastro.png) 
 
-#### > *Wireframe da tela lista de profissionais da aplicação.*
-![Tela home](./img/wireframe-lista-mobile.png)
-
-#### > *Wireframe da tela de agenda da aplicação.*
-![Tela agenda](./img/wireframe-agenda-mobile.png)   
+#### > *Wireframe da tela de login da aplicação.*
+![Tela login](./img/mobile-v2/02%20-%20login.png)    
 
 #### > *Wireframe da tela de perfil da aplicação.*
-![Tela home](./img/wireframe-perfil-mobile.png)  
+![Tela home](./img/mobile-v2/03%20-%20perfil%20usuário.png)   
 
 #### > *Wireframe da tela de editar perfil da aplicação.*
-![Tela home](./img/wireframe-editar-perfil-mobile.png)  
+![Tela home](./img/mobile-v2/04%20-%20editar%20perfil.png)  
+
+#### > *Wireframe da tela lista de profissionais da aplicação.*
+![Tela home](./img/mobile-v2/05%20-%20lista%20de%20profissionais.png)
+
+#### > *Wireframe da tela de agenda da aplicação.*
+![Tela agenda](./img/mobile-v2/06%20-%20agenda%20do%20profissional.png)
 
 ### Design Visual
 

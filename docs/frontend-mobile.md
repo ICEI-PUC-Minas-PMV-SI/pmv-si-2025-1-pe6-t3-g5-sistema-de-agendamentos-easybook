@@ -211,7 +211,7 @@ c) Banco de Dados (MySQL)
 
 ## Testes de interface
 
-Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas descritas abaixo, com o objetivo de validar tanto as interações corretas com a API quanto a lógica interna da aplicação web.
+Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas descritas abaixo, com o objetivo de validar tanto as interações corretas com a API quanto a lógica interna da aplicação mobile.
 
 ### 1. criar conta
 
@@ -265,101 +265,39 @@ Os testes de interface foram feitos manualmente, seguindo o roteiro das tarefas 
 
 ### 3. alterar a foto de perfil e o nome de exibição
 
-### a) o usuário clica em um dos botões de edição (lápis ao lado do nome ou "editar perfil" no menu drop-down), preenche as novas informações e faz o envio do formulário.
+### a) o usuário clica no botão de edição, na parte inferior da tela Perfil, preenche as novas informações e faz o envio do formulário.
 
 **Resultado esperado**: o usuário é redirecionado para a página inicial, já com a foto e/ou nome atualizados.
 
 **Resultado obtido**: conforme o esperado.
 
-### 4. disponibilizar horário
+### 4. agendar horário (como cliente)
 
-### a) o usuário, na condição de prestador de serviços, navega até a aba "editar agenda", seleciona um dia no calendário e clica no botão de adição (+).
-
-**Resultado esperado**: um novo horário é criado na data selecionada e salvo automaticamente no banco de dados. Por padrão o novo horário é às 09:00, podendo ser editado na mesma tela em que foi criado.
-
-**Resultado obtido**: conforme o esperado.
-
-### 5. editar agenda de horários (como profissional)
-
-### 5.1 - alterar um horário individualmente e salvar
-
-### a) na aba "editar agenda", o profissional seleciona uma data para a qual existe um horário criado e altera o valor da hora. Após a alteração, clica em "salvar" (ícone de disquete).
-
-**Resultado esperado**: o horário é atualizado no back-end, sendo exibida uma mensagem de sucesso referente apenas a um horário.
-
-**Resultado obtido**: conforme o esperado.
-
-### b) na aba "editar agenda", o profissional seleciona uma data para a qual existe um horário criado e altera o valor da hora. Após a alteração, clica em "salvar horários do dia".
-
-**Resultado esperado**: o horário é atualizado no back-end, sendo exibida uma mensagem de sucesso referente apenas aos horários do dia de forma geral.
-
-**Resultado obtido**: conforme o esperado.
-
-### 5.2 - alterar múltiplos horários e salvar apenas uma parte
-
-### a) na aba "editar agenda", o profissional seleciona uma data para a qual existem no mínimo três horários criados e altera o valor da hora de no mínimo dois deles, garantindo que ao menos um siga inalterado. Após a alteração, clica no botão "salvar" (ícone de disquete) de cada um dos horários alterados.
-
-**Resultado esperado**: os horários são atualizados no back-end, sendo exibida uma mensagem de sucesso referente a cada salvamento individual.
-
-**Resultado obtido**: conforme o esperado.
-
-### b) na aba "editar agenda", o profissional seleciona uma data para a qual existem pelo menos três horários criados e altera o valor da hora de no mínimo dois deles, garantindo que ao menos um siga inalterado. Após a alteração, clica em "salvar horários do dia".
-
-**Resultado esperado**: os horários são atualizados no back-end, sendo exibida uma mensagem de sucesso referente apenas aos horários do dia de forma geral.
-
-**Resultado obtido**: conforme o esperado.
-
-### 5.3 -  alterar múltiplos horários e salvar todos
-
-### a) na aba "editar agenda", o profissional seleciona uma data para a qual existem no mínimo três horários criados e altera todos eles. Após a alteração, clica no botão "salvar" (ícone de disquete) de cada um dos horários alterados.
-
-**Resultado esperado**: todos os horários são atualizados no back-end, sendo exibida uma mensagem de sucesso referente a cada salvamento individual.
-
-**Resultado obtido**: conforme o esperado.
-
-### a) na aba "editar agenda", o profissional seleciona uma data para a qual existem pelo menos três horários criados e altera o valor da hora de todos eles. Após a alteração, clica em "salvar horários do dia".
-
-**Resultado esperado**: todos horários são atualizados no back-end, sendo exibida uma mensagem de sucesso referente apenas aos horários do dia de forma geral.
-
-**Resultado obtido**: conforme o esperado.
-
-### 6. agendar horário (como cliente)
-
-### a) acessando o perfil de um(a) profissional ([...]/visualizar-perfil.html?usuario={id}), o(a) cliente verifica a lista de horários disponíveis para a data desejada, clica neste horário e confirma o agendamento na caixa de confirmação exibida.
+### a) após o login, na tela inicial, o usuário clica em "Agendar horário", sendo redirecionado para a tela Profissionais. Na tela Profissionais, o usuário visualiza uma lista de profissionais disponíveis, clica em um deles, e é redirecionado para a tela Agendamentos. Na tela Agendamentos, o usuário navega entre as datas, encontra um horário, clica neste horário, clica em "Agendar", vê uma caixa de diálogo solicitando a confirmação e, por fim, confirma.
 
 **Resultado esperado**: o horário é agendado e imediatamente deixa de aparecer na lista de horário disponíveis.
 
 **Resultado obtido**: conforme o esperado.
 
-### 7. conferir horários agendados (como cliente)
+### b) após o login, na tela inicial, o usuário clica em "Agendar horário", sendo redirecionado para a tela Profissionais. Na tela Profissionais, o usuário visualiza uma lista de profissionais disponíveis, clica em um deles, e é redirecionado para a tela Agendamentos. Na tela Agendamentos, o usuário navega entre as datas, encontra um horário, clica neste horário, clica em "Agendar", vê uma caixa de diálogo solicitando a confirmação e, por fim, cancela a operação.
 
-### a) o(a) usuário(a), tendo agendamentos para datas passadas, para a data atual e para datas posteriores, acessa a página "perfil comum".  
+**Resultado esperado**: o horário não é agendado e segue aparecendo na lista de horário disponíveis.
+
+**Resultado obtido**: conforme o esperado.
+
+### 5. conferir horários agendados (como cliente)
+
+### a) o(a) usuário(a) realiza login no aplicativo, e, na página inicial, vê uma lista de seus agendamentos contendo as informações de data, horário e nome do(a) profissional, além de um botão de cancelamento.  
 
 **Resultado esperado**: para cada horário existente na data atual ou em datas futuras, é exibido um card com as informações "nome do(a) profissional", "data" e "hora", além de um botão "cancelar". Horários de datas passadas não são exibidos.
 
 **Resultado obtido**: conforme o esperado.
 
-### 8. conferir horários agendados (como prestador)
+### 6. cancelar horário agendado (como cliente)
 
-### a) o(a) usuário(a), tendo agendamentos para datas passadas, para a data atual e para datas posteriores, acessa a página "perfil profissional".  
-
-**Resultado esperado**: para cada horário existente na data atual ou em datas futuras, é exibido um card com as informações "nome do(a) profissional", "data" e "hora", além de um botão "cancelar". Horários de datas passadas não são exibidos.
-
-**Resultado obtido**: conforme o esperado.
-
-### 9. cancelar horário agendado (como cliente)
-
-### a) o(a) usuário(a) acessa a página "perfil comum", clica em um dos botões "cancelar" no card de um horário e confirma a exclusão na caixa de confirmação exibida.  
+### a) o(a) usuário(a) acessa o aplicativo, clica em um dos botões "cancelar" no card de um horário e confirma a exclusão na caixa de confirmação exibida.  
 
 **Resultado esperado**: o agendamento é cancelado e imediatamente removido da lista de agendamentos. O agendamento volta imediatamente a aparecer como disponível no perfil do(a) profissional que o disponibilizou.
-
-**Resultado obtido**: conforme o esperado.
-
-### 10. cancelar horário agendado (como profissional)
-
-### a) o(a) usuário(a) acessa a página "perfil profissional", clica em um dos botões "cancelar" no card de um horário e confirma a exclusão na caixa de confirmação exibida..  
-
-**Resultado esperado**: o agendamento é cancelado e imediatamente removido da lista de agendamentos do respectivo cliente. O agendamento volta imediatamente a aparecer como disponível no perfil do(a) profissional que o disponibilizou.
 
 **Resultado obtido**: conforme o esperado.
 

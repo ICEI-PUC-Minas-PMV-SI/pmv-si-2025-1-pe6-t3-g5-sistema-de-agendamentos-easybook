@@ -116,6 +116,8 @@ Retorna 201 Created.
 - *Java, Spring Boot*
 - *MySQL*
 - *Insomnia*
+- React Native
+- Expo
 
 
 ## Considerações de Segurança

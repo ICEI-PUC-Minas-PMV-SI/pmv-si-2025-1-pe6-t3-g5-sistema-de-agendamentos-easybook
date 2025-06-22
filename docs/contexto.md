@@ -44,9 +44,8 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID     | Descrição do Requisito  |Prioridade |Responsáveis |
 |-------|----------------------------------------|----|----|
-|RF-001| O sistema deve executar gestão de agendas (Criar,editar,excluir horários) | ALTA | João, Bruno |
-|RF-002| Serviço de Notificações | BAIXA | Jean, Lincoln |
-|RF-003| O sistema deve executrar gestão de usuários, editar dados de perfil como nome, senha, descrição,  autenticação e autorização, excluir ou desativar perfil |  ALTA | Gabriel, Larissa |
+|RF-001| O sistema deve executar gestão de agendas (Criar,editar,excluir horários) | ALTA | João, Bruno, Lincoln |
+|RF-002| O sistema deve executrar gestão de usuários, editar dados de perfil como nome, senha, descrição, autenticação e autorização, excluir ou desativar perfil |  ALTA | Gabriel, Larissa, Jean |
 
 
 

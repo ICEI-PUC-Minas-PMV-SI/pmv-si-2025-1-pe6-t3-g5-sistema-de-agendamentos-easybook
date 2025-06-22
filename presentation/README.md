@@ -1,8 +1,8 @@
 # Apresentação da Solução
 
-## Apresentação em Slides e Vídeo da Aplicação Easybook na Versão Web e Mobile
+### Apresentação da aplicação Easybook em slides e vídeo na versão Web e Mobile
 
-### [📄 Ver apresentação em Slides](./slides.pdf)
+#### [📄 Ver apresentação em Slides](./slides.pdf)
 
 
 
